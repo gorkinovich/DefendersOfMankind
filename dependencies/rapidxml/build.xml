@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<project name="rapidxml" default="build">
+
+<!-- =================== -->
+<!-- TARGETS DE LIMPIEZA -->
+<!-- =================== -->
+
+<target name="cleanRelease"/>
+<target name="cleanDebug"/>
+<target name="clean" depends="cleanDebug,cleanRelease"/>
+
+<!-- ==================================== -->
+<!-- TARGETS DE CREACION DE DOCUMENTACION -->
+<!-- ==================================== -->
+
+<target name="doxygen"/>
+
+<!-- ==================================== -->
+<!-- TARGETS DE PUBLICACION DE RESULTADOS -->
+<!-- AL DIRECTORIO dependencies           -->
+<!-- ==================================== -->
+
+<target name="publishHeaders">
+  <mkdir dir="../include/rapidxml"/>
+  <copy todir="../include/rapidxml">
+    <fileset dir="." includes="*.hpp"/>
+  </copy>
+</target>
+
+<!-- ================================== -->
+<!-- TARGETS DE COMPILACION INCREMENTAL -->
+<!-- ================================== -->
+
+<target name="debug" depends="publishHeaders"/>
+<target name="release" depends="publishHeaders"/>
+<target name="build" depends="debug,release"/>
+
+<!-- =============================== -->
+<!-- TARGETS DE COMPILACION COMPLETA -->
+<!-- =============================== -->
+
+<target name="redebug" depends="publishHeaders"/>
+<target name="rerelease" depends="publishHeaders"/>
+<target name="rebuild" depends="redebug,rerelease"/>
+
+<!-- =========================== -->
+<!-- TARGETS PARA CRUISE CONTROL -->
+<!-- =========================== -->
+
+<target name="CruiseControl" depends="build"/>
+
+</project>
