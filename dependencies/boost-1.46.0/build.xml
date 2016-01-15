@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!-- Fichero Ant para la compilacion de Ogre -->
+<!-- Marco Antonio Gomez Martin -->
+<!-- Septiembre 2010 -->
+
+<project name="Boost" default="build">
+
+<!-- ======================== -->
+<!-- PROPIEDADES DEL PROYECTO -->
+<!-- ======================== -->
+
+<property name="bjamDefaultParams" value='toolset=msvc-9.0 --build-type=complete --with-thread --with-date_time'/>
+<!--
+http://www.boost.org/doc/libs/?view=categorized
+All:
+    date_time       -> A set of date-time libraries based on generic programming concepts.
+    filesystem      -> Provides portable facilities to query and manipulate paths, files, and directories.
+    iostreams       -> A framework for defining streams, stream buffers and i/o filters.
+    mpi             -> Message Passing Interface library, for use in distributed-memory parallel application programming.
+    program_options -> allows program developers to obtain program options, that is (name, value) pairs
+                       from the user, via conventional methods such as command line and config file.
+    python          -> A framework for interfacing Python and C++.
+    serialization   -> Serialization for persistence and marshalling.
+    signals         -> Managed signals & slots callback implementation.
+    system          -> Operating system support, including the diagnostics support that will be part of the C++0x standard library.
+    test            -> Support for simple program testing, full unit testing, and for program execution monitoring.
+    thread          -> Portable C++ multi-threading.
+    wave            -> A Standards conformant, and highly configurable implementation of the mandated
+                       C99/C++ preprocessor functionality packed behind an easy to use iterator interface.
+
+Fallan:
+    graph           -> The BGL graph interface and graph components are generic, in the same sense as the the STL.
+    graph_parallel  -> The BGL graph interface and graph components are generic, in the same sense as the the STL.
+    math            -> Includes several contributions in the domain of mathematics.
+
+TR1:
+    random          -> A complete system for random number generation.
+    regex           -> Regular expression library.
+-->
+  
+<!-- =================== -->
+<!-- TARGETS DE LIMPIEZA -->
+<!-- =================== -->
+
+<target name="cleanRelease" description="Elimina ficheros de compilación">
+  <delete includeemptydirs="true" failonerror="false">
+    <fileset dir="./bin.v2"/>
+  </delete>
+</target>
+
+<target name="cleanDebug" description="Elimina ficheros de compilación">
+  <delete includeemptydirs="true" failonerror="false">
+    <fileset dir="./bin.v2"/>
+  </delete>
+</target>
+
+<target name="clean" description="Elimina ficheros de compilación"
+        depends="cleanDebug,cleanRelease"/>
+
+<!-- ==================================== -->
+<!-- TARGETS DE CREACION DE DOCUMENTACION -->
+<!-- ==================================== -->
+
+<target name="doxygen" description="Genera la documentación, si la hay.">
+  <taskdef name="doxygen" classname="org.doxygen.tools.DoxygenTask" />
+  <doxygen configFilename="Doxyfile"/>
+</target>
+
+<!-- ==================================== -->
+<!-- TARGETS DE PUBLICACION DE RESULTADOS -->
+<!-- AL DIRECTORIO dependencies           -->
+<!-- ==================================== -->
+
+<target name="publishHeaders">
+  <mkdir dir="../include/boost"/>
+  <copy todir="../include/boost">
+    <fileset dir="./boost"/>
+  </copy>
+</target>
+
+<target name="publishDebug" depends="publishHeaders">
+  <copy todir="../lib/Debug">
+    <!-- <fileset dir="./stage/lib" includes="libboost_thread-vc90-mt-gd.lib,libboost_thread-vc90-mt-gd-1_45.lib"/> -->
+    <fileset dir="./stage/lib" includes="*.lib"/>
+  </copy>
+</target>
+
+<target name="publishRelease" depends="publishHeaders">
+  <copy todir="../lib/Release">
+    <!-- <fileset dir="./stage/lib" includes="libboost_thread-vc90-mt.lib,libboost_thread-vc90-mt-1_45.lib"/> -->
+    <fileset dir="./stage/lib" includes="*.lib"/>
+  </copy>
+</target>
+
+<!-- ================================== -->
+<!-- TARGETS DE COMPILACION INCREMENTAL -->
+<!-- ================================== -->
+
+<!-- Objetivo que compila el proyecto en modo Debug. -->
+<target name="debug" description="Compilación (incremental) en modo Debug">
+  <exec executable="./Dependencies/boost-1.46.0/bjam" failonerror="true" dir="${basedir}">
+    <arg line="${bjamDefaultParams}"/>
+  </exec>
+  <antcall target="publishDebug"/>
+</target>
+
+<!-- Objetivo que compila el proyecto en modo Release. -->
+<target name="release" description="Compilación (incremental) en modo Release">
+  <exec executable="./Dependencies/boost-1.46.0/bjam" failonerror="true" dir="${basedir}">
+    <arg line="${bjamDefaultParams}"/>
+  </exec>
+  <antcall target="publishRelease"/>
+</target>
+
+<!-- Objetivo que compila el proyecto (Debug+Release) de forma incremental. -->
+<target name="build" description="Compilación (incremental) Debug y Release."
+        depends="debug, release"/>
+
+<!-- =============================== -->
+<!-- TARGETS DE COMPILACION COMPLETA -->
+<!-- =============================== -->
+
+<!-- Objetivo que compila todo el proyecto en modo Debug. -->
+<target name="redebug" description="Compilación desde cero en modo Debug"
+		depends="publishDebug"/>
+
+<!-- Objetivo que compila todo el proyecto en modo Release. -->
+<target name="rerelease" description="Compilación desde cero en modo Release"
+		depends="publishRelease"/>
+
+<!-- Objetivo que compila todo el proyecto (Debug+Release). -->
+<target name="rebuild" description="Compilación desde cero en Debug y Release."
+        depends="redebug, rerelease"/>
+
+<!-- =========================== -->
+<!-- TARGETS PARA CRUISE CONTROL -->
+<!-- =========================== -->
+
+<target name="CruiseControl" description="Compilacion para CruiseControl."
+        depends="build"/>
+
+</project>
