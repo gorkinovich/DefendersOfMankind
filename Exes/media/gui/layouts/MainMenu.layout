@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="MainMenu">
+    <Property Name="Text" Value="MainMenu" />
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+
+    <!-- TODO: Completar el fichero... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos decorativos                               -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: Fondo de prueba... -->
+    <Window Type="MankindDefenders/MenuBackground" Name="MainMenu/Background">
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+      <Property Name="Image" Value="set:TestBackground image:TestBackground43" />
+    </Window>
+    <!-- FIN: Fondo de prueba... -->
+
+    <!-- TODO: Logo de prueba... -->
+    <Window Type="MankindDefenders/StaticImage" Name="MainMenu/GameLogo">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="CentreAligned" />
+      <Property Name="VertFormatting" Value="CentreAligned" />
+      <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0,0},{0.9,0},{0.4,0}}" />
+      <Property Name="Image" Value="set:Logo image:Logo" />
+    </Window>
+    <!-- FIN: Logo de prueba... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos interactivos                              -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: Borrar esto cuando se termine el sistema de las misiones... -->
+    <Window Type="MankindDefenders/Button" Name="MainMenu/TestMissionButton">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="DejaVuSans-10" />
+      <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.82,0},{0.4,0},{0.9,0}}" />
+      <Property Name="Text" Value="Test Mission" />
+	  <Property Name="Visible" Value="False" />
+    </Window> 
+    <!-- FIN: Borrar esto cuando se termine el sistema de las misiones... -->
+
+    <!-- TODO: Botones de prueba... -->
+
+    
+    <Window Type="MankindDefenders/Button" Name="MainMenu/NewProfileButton">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="DejaVuSans-10" />
+      <Property Name="UnifiedAreaRect" Value="{{0.7,0},{0.42,0},{0.9,0},{0.5,0}}" />
+      <Property Name="Text" Value="New Profile" />
+    </Window>
+
+    <Window Type="MankindDefenders/Button" Name="MainMenu/LoadProfileButton">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="DejaVuSans-10" />
+      <Property Name="UnifiedAreaRect" Value="{{0.7,0},{0.52,0},{0.9,0},{0.6,0}}" />
+      <Property Name="Text" Value="Load Profile" />
+    </Window>
+	
+	<Window Type="MankindDefenders/Button" Name="MainMenu/CreditsButton">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="DejaVuSans-10" />
+      <Property Name="UnifiedAreaRect" Value="{{0.7,0},{0.72,0},{0.9,0},{0.8,0}}" />
+      <Property Name="Text" Value="Credits" />
+    </Window>
+
+    <Window Type="MankindDefenders/Button" Name="MainMenu/OptionsButton">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="DejaVuSans-10" />
+      <Property Name="UnifiedAreaRect" Value="{{0.7,0},{0.62,0},{0.9,0},{0.7,0}}" />
+      <Property Name="Text" Value="Options" />
+      <Property Name="Visible" Value="False" />
+    </Window>
+
+    <Window Type="MankindDefenders/Button" Name="MainMenu/HelpButton">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="DejaVuSans-10" />
+      <Property Name="UnifiedAreaRect" Value="{{0.7,0},{0.72,0},{0.9,0},{0.8,0}}" />
+      <Property Name="Text" Value="Help" />
+      <Property Name="Visible" Value="False" />
+    </Window>
+
+    <Window Type="MankindDefenders/Button" Name="MainMenu/ExitButton">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="DejaVuSans-10" />
+      <Property Name="UnifiedAreaRect" Value="{{0.7,0},{0.82,0},{0.9,0},{0.9,0}}" />
+      <Property Name="Text" Value="Exit" />
+    </Window>
+    <!-- FIN: Botones de prueba... -->
+  </Window>
+</GUILayout>

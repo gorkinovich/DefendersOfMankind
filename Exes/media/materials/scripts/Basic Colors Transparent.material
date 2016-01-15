@@ -1,0 +1,127 @@
+material White_Transparent
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1 0.5
+			diffuse 1 1 1 0.5
+			specular 0 0 0 0.5 10
+			emissive 1 1 1
+			depth_write off
+			scene_blend alpha_blend
+		}
+	}
+}
+
+material Black_Transparent
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 0 0 0.5
+			diffuse 0 0 0 0.5
+			specular 0 0 0 0.5 10
+			emissive 0 0 0
+			depth_write off
+			scene_blend alpha_blend
+		}
+	}
+}
+
+material LightGrey_Transparent
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 0.5
+			diffuse 0.75 0.75 0.75 0.5
+			specular 0 0 0 0.5 10
+			emissive 0.75 0.75 0.75
+			depth_write off
+			scene_blend alpha_blend
+		}
+	}
+}
+
+material Red_Transparent
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 0 0 0.5
+			diffuse 1 0 0 0.5
+			specular 0 0 0 0.5 10
+			emissive 1 0 0
+			depth_write off
+			scene_blend alpha_blend
+		}
+	}
+}
+
+material Green_Transparent
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 1 0 0.5
+			diffuse 0 1 0 0.5
+			specular 0 0 0 0.5 10
+			emissive 0 1 0
+			depth_write off
+			scene_blend alpha_blend
+		}
+	}
+}
+
+material Blue_Transparent
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 0 1 0.5
+			diffuse 0 0 1 0.5
+			specular 0 0 0 0.5 10
+			emissive 0 0 1
+			depth_write off
+			scene_blend alpha_blend
+		}
+	}
+}
+
+material Yellow_Transparent
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 0 0.5
+			diffuse 1 1 0 0.5
+			specular 0 0 0 0.5 10
+			emissive 1 1 0
+			depth_write off
+			scene_blend alpha_blend
+		}
+	}
+}
+
+material Purple_Transparent
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 0 1 0.5
+			diffuse 1 0 1 0.5
+			specular 0 0 0 0.5 10
+			emissive 1 0 1
+			depth_write off
+			scene_blend alpha_blend
+		}
+	}
+}

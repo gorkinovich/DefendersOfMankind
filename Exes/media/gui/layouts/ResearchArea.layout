@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="ResearchArea">
+    <Property Name="Text" Value="ResearchArea" />
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+
+    <!-- TODO: Completar el fichero... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos decorativos                               -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: Fondo de prueba... -->
+    <Window Type="MankindDefenders/MenuBackground" Name="ResearchArea/Background">
+      <Property Name="Image" Value="set:TestBackground image:TestBackground43" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+    </Window>
+    <!-- FIN: Fondo de prueba... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos interactivos                              -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: XXX de prueba... -->
+    <Window Type="MankindDefenders/InvisiblePanel" Name="ResearchArea/MainPanel">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+
+      <Window Type="MankindDefenders/StaticText" Name="ResearchArea/Title">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="FrameEnabled" Value="True" />
+        <Property Name="BackgroundEnabled" Value="True" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.3,0},{0.05,0},{0.7,0},{0.15,0}}" />
+        <Property Name="Text" Value="Research Area" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="ResearchArea/LeftButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,0},{0.2,0},{0.25,0},{0.3,0}}" />
+        <Property Name="Text" Value="Area 1" />
+      </Window>
+
+      <Window Type="MankindDefenders/StaticText" Name="ResearchArea/AreaTitle">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="FrameEnabled" Value="True" />
+        <Property Name="BackgroundEnabled" Value="True" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.2,0},{0.6,0},{0.3,0}}" />
+        <Property Name="Text" Value="Area 2" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="ResearchArea/RightButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.75,0},{0.2,0},{0.95,0},{0.3,0}}" />
+        <Property Name="Text" Value="Area 3" />
+      </Window>
+
+
+      <Window Type="MankindDefenders/Button" Name="ResearchArea/LeftResearch1">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.32,0},{0.3,0},{0.42,0}}" />
+        <Property Name="Text" Value="L1" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="ResearchArea/MiddleResearch1">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.32,0},{0.6,0},{0.42,0}}" />
+        <Property Name="Text" Value="M1" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="ResearchArea/RightResearch1">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.7,0},{0.32,0},{0.9,0},{0.42,0}}" />
+        <Property Name="Text" Value="R1" />
+      </Window>
+
+
+      <Window Type="MankindDefenders/Button" Name="ResearchArea/LeftResearch2">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.44,0},{0.3,0},{0.54,0}}" />
+        <Property Name="Text" Value="L2" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="ResearchArea/MiddleResearch2">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.44,0},{0.6,0},{0.54,0}}" />
+        <Property Name="Text" Value="M2" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="ResearchArea/RightResearch2">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.7,0},{0.44,0},{0.9,0},{0.54,0}}" />
+        <Property Name="Text" Value="R2" />
+      </Window>
+
+
+      <Window Type="MankindDefenders/Button" Name="ResearchArea/LeftResearch3">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.56,0},{0.3,0},{0.66,0}}" />
+        <Property Name="Text" Value="L3" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="ResearchArea/MiddleResearch3">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.56,0},{0.6,0},{0.66,0}}" />
+        <Property Name="Text" Value="M3" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="ResearchArea/RightResearch3">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.7,0},{0.56,0},{0.9,0},{0.66,0}}" />
+        <Property Name="Text" Value="R3" />
+      </Window>
+
+
+      <Window Type="MankindDefenders/Button" Name="ResearchArea/LeftResearch4">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.68,0},{0.3,0},{0.78,0}}" />
+        <Property Name="Text" Value="L4" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="ResearchArea/MiddleResearch4">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.68,0},{0.6,0},{0.78,0}}" />
+        <Property Name="Text" Value="M4" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="ResearchArea/RightResearch4">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.7,0},{0.68,0},{0.9,0},{0.78,0}}" />
+        <Property Name="Text" Value="R4" />
+      </Window>
+
+
+      <Window Type="MankindDefenders/Button" Name="ResearchArea/HelpButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,0},{0.85,0},{0.25,0},{0.95,0}}" />
+        <Property Name="Text" Value="Help" />
+      </Window>
+
+      <Window Type="MankindDefenders/StaticText" Name="ResearchArea/Money">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="FrameEnabled" Value="True" />
+        <Property Name="BackgroundEnabled" Value="True" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.85,0},{0.6,0},{0.95,0}}" />
+        <Property Name="Text" Value="0000$" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="ResearchArea/BackButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.75,0},{0.85,0},{0.95,0},{0.95,0}}" />
+        <Property Name="Text" Value="Back" />
+      </Window>
+    </Window>
+    <!-- FIN: XXX de prueba... -->
+
+    <!-- TODO: XXX de prueba... -->
+    <Window Type="MankindDefenders/Panel" Name="ResearchArea/BuyDialog">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.2,0},{0.8,0},{0.8,0}}" />
+
+      <Window Type="MankindDefenders/StaticText" Name="ResearchArea/Dialog/Title">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.9,0},{0.2,0}}" />
+        <Property Name="Text" Value="Research name ABC-123" />
+      </Window>
+
+      <Window Type="MankindDefenders/StaticText" Name="ResearchArea/Dialog/CostLabel">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.3,0},{0.9,0},{0.4,0}}" />
+        <Property Name="Text" Value="This research cost:" />
+      </Window>
+
+      <Window Type="MankindDefenders/StaticText" Name="ResearchArea/Dialog/Cost">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.4,0},{0.9,0},{0.5,0}}" />
+        <Property Name="Text" Value="100$" />
+      </Window>
+
+      <Window Type="MankindDefenders/StaticText" Name="ResearchArea/Dialog/MoneyLabel">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.6,0},{0.4,0},{0.7,0}}" />
+        <Property Name="Text" Value="You have:" />
+      </Window>
+
+      <Window Type="MankindDefenders/StaticText" Name="ResearchArea/Dialog/Money">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="RightAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.6,0},{0.6,0},{0.9,0},{0.7,0}}" />
+        <Property Name="Text" Value="100$" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="ResearchArea/Dialog/BuyButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.8,0},{0.4,0},{0.9,0}}" />
+        <Property Name="Text" Value="Buy" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="ResearchArea/Dialog/CancelButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.6,0},{0.8,0},{0.9,0},{0.9,0}}" />
+        <Property Name="Text" Value="Cancel" />
+      </Window>
+    </Window>
+    <!-- FIN: XXX de prueba... -->
+  </Window>
+</GUILayout>

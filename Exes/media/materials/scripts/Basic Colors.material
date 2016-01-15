@@ -1,0 +1,41 @@
+material White
+{
+	technique
+	{
+		pass
+		{
+			scene_blend alpha_blend
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 0 0 0 1 10
+		}
+	}
+}
+
+material Green
+{
+	technique
+	{
+		pass
+		{
+			scene_blend alpha_blend
+			ambient 0 1 0 1
+			diffuse 0 1 0 1
+			specular 0 0 0 1 10
+		}
+	}
+}
+
+material Red
+{
+	technique
+	{
+		pass
+		{
+			scene_blend alpha_blend
+			ambient 1 0 0 1
+			diffuse 1 0 0 1
+			specular 0 0 0 1 10
+		}
+	}
+}

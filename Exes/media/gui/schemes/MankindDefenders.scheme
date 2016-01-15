@@ -1,0 +1,172 @@
+<?xml version="1.0" ?>
+<GUIScheme Name="MankindDefenders">
+  <!-- TODO: Completar el fichero... -->
+
+  <!-- ******************************************************************************** -->
+  <!--                            Configuración del esquema                             -->
+  <!-- ******************************************************************************** -->
+
+  <Imageset Filename="MankindDefenders.imageset" />
+  <Imageset Filename="MultiColumnSelector.imageset" />
+  <Imageset Filename="Logo.imageset" />
+  <!-- TODO: Configuración de prueba... -->
+  <!-- <Imageset Name="" Filename=".imageset" /> -->
+  <Imageset Filename="TestBackground.imageset" />
+  <Imageset Filename="CreditsBackground.imageset" />
+  <Imageset Filename="HUD.imageset" />
+  <!-- FIN: Configuración de prueba... -->
+
+  <!-- TODO: Configuración de prueba... -->
+  <!-- <Font Filename=".font" /> -->
+  <Font Filename="DejaVuSans-10.font" />
+  <!-- <Font Filename="cyberspace.font" /> -->
+  <!-- FIN: Configuración de prueba... -->
+
+  <LookNFeel Filename="MankindDefenders.looknfeel" />
+
+  <WindowRendererSet Filename="CEGUIFalagardWRBase" />
+
+  <!-- ******************************************************************************** -->
+  <!--                                     General                                      -->
+  <!-- ******************************************************************************** -->
+
+  <FalagardMapping WindowType="MankindDefenders/MenuBackground" TargetType="DefaultWindow"
+                   LookNFeel="MankindDefenders/MenuBackground"  Renderer="Falagard/StaticImage" />
+
+  <FalagardMapping WindowType="MankindDefenders/Sprite" TargetType="DefaultWindow"
+                   LookNFeel="MankindDefenders/Sprite"  Renderer="Falagard/StaticImage" />
+
+  <FalagardMapping WindowType="MankindDefenders/StaticImage" TargetType="DefaultWindow"
+                   LookNFeel="MankindDefenders/StaticImage"  Renderer="Falagard/StaticImage" />
+
+  <FalagardMapping WindowType="MankindDefenders/StaticText" TargetType="DefaultWindow"
+                   LookNFeel="MankindDefenders/StaticText"  Renderer="Falagard/StaticText" />
+
+  <!-- ******************************************************************************** -->
+  <!--                                   Contenedores                                   -->
+  <!-- ******************************************************************************** -->
+
+  <FalagardMapping WindowType="MankindDefenders/DialogWindow" TargetType="CEGUI/FrameWindow"
+                   LookNFeel="MankindDefenders/DialogWindow"  Renderer="Falagard/FrameWindow" />
+
+  <FalagardMapping WindowType="MankindDefenders/TabControl" TargetType="CEGUI/TabControl"
+                   LookNFeel="MankindDefenders/TabControl"  Renderer="Falagard/TabControl" />
+
+  <FalagardMapping WindowType="MankindDefenders/ScrollablePanel" TargetType="CEGUI/ScrollablePane"
+                   LookNFeel="MankindDefenders/ScrollablePanel"  Renderer="Falagard/ScrollablePane" />
+
+  <FalagardMapping WindowType="MankindDefenders/Panel" TargetType="DefaultWindow"
+                   LookNFeel="MankindDefenders/Panel"  Renderer="Falagard/Default" />
+
+  <FalagardMapping WindowType="MankindDefenders/InvisiblePanel" TargetType="DefaultWindow"
+                   LookNFeel="MankindDefenders/InvisiblePanel"  Renderer="Falagard/Default" />
+
+  <FalagardMapping WindowType="MankindDefenders/RadioGroup" TargetType="DefaultWindow"
+                   LookNFeel="MankindDefenders/RadioGroup"  Renderer="Falagard/Default" />
+
+  <!-- ******************************************************************************** -->
+  <!--                                      Menús                                       -->
+  <!-- ******************************************************************************** -->
+
+  <FalagardMapping WindowType="MankindDefenders/Menubar" TargetType="CEGUI/Menubar"
+                   LookNFeel="MankindDefenders/Menubar"  Renderer="Falagard/Menubar" />
+
+  <FalagardMapping WindowType="MankindDefenders/MenuItem" TargetType="CEGUI/MenuItem"
+                   LookNFeel="MankindDefenders/MenuItem"  Renderer="Falagard/MenuItem" />
+
+  <FalagardMapping WindowType="MankindDefenders/PopupMenu" TargetType="CEGUI/PopupMenu"
+                   LookNFeel="MankindDefenders/PopupMenu"  Renderer="Falagard/PopupMenu" />
+
+  <!-- ******************************************************************************** -->
+  <!--                                     Botones                                      -->
+  <!-- ******************************************************************************** -->
+
+  <FalagardMapping WindowType="MankindDefenders/Button" TargetType="CEGUI/PushButton"
+                   LookNFeel="MankindDefenders/Button"  Renderer="Falagard/Button" />
+
+  <FalagardMapping WindowType="MankindDefenders/Thumb" TargetType="CEGUI/Thumb"
+                   LookNFeel="MankindDefenders/Thumb"  Renderer="Falagard/Button" />
+
+  <FalagardMapping WindowType="MankindDefenders/Checkbox" TargetType="CEGUI/Checkbox"
+                   LookNFeel="MankindDefenders/Checkbox"  Renderer="Falagard/ToggleButton" />
+
+  <FalagardMapping WindowType="MankindDefenders/RadioButton" TargetType="CEGUI/RadioButton"
+                   LookNFeel="MankindDefenders/RadioButton"  Renderer="Falagard/ToggleButton" />
+
+  <!-- ******************************************************************************** -->
+  <!--                                 Entrada de texto                                 -->
+  <!-- ******************************************************************************** -->
+
+  <FalagardMapping WindowType="MankindDefenders/Spinner" TargetType="CEGUI/Spinner"
+                   LookNFeel="MankindDefenders/Spinner"  Renderer="Falagard/Default" />
+
+  <FalagardMapping WindowType="MankindDefenders/Editbox" TargetType="CEGUI/Editbox"
+                   LookNFeel="MankindDefenders/Editbox"  Renderer="Falagard/Editbox" />
+
+  <FalagardMapping WindowType="MankindDefenders/MultiLineEditbox" TargetType="CEGUI/MultiLineEditbox"
+                   LookNFeel="MankindDefenders/MultiLineEditbox"  Renderer="Falagard/MultiLineEditbox" />
+
+  <!-- ******************************************************************************** -->
+  <!--                                 Listas y combos                                  -->
+  <!-- ******************************************************************************** -->
+
+  <FalagardMapping WindowType="MankindDefenders/Listbox" TargetType="CEGUI/Listbox"
+                   LookNFeel="MankindDefenders/Listbox"  Renderer="Falagard/Listbox" />
+
+  <FalagardMapping WindowType="MankindDefenders/Combobox" TargetType="CEGUI/Combobox"
+                   LookNFeel="MankindDefenders/Combobox"  Renderer="Falagard/Default" />
+
+  <FalagardMapping WindowType="MankindDefenders/MultiColumnList" TargetType="CEGUI/MultiColumnList"
+                   LookNFeel="MankindDefenders/MultiColumnList"  Renderer="Falagard/MultiColumnList" />
+
+  <FalagardMapping WindowType="MankindDefenders/SimpleListbox" TargetType="CEGUI/ItemListbox"
+                   LookNFeel="MankindDefenders/SimpleListbox"  Renderer="Falagard/ItemListbox" />
+
+  <FalagardMapping WindowType="MankindDefenders/ListboxItem" TargetType="CEGUI/ItemEntry"
+                   LookNFeel="MankindDefenders/ListboxItem"  Renderer="Falagard/ItemEntry" />
+
+  <!-- ******************************************************************************** -->
+  <!--                                      Varios                                      -->
+  <!-- ******************************************************************************** -->
+
+  <FalagardMapping WindowType="MankindDefenders/Slider" TargetType="CEGUI/Slider"
+                   LookNFeel="MankindDefenders/Slider"  Renderer="Falagard/Slider" />
+
+  <FalagardMapping WindowType="MankindDefenders/HorizontalScrollbar" TargetType="CEGUI/Scrollbar"
+                   LookNFeel="MankindDefenders/HorizontalScrollbar"  Renderer="Falagard/Scrollbar" />
+
+  <FalagardMapping WindowType="MankindDefenders/VerticalScrollbar" TargetType="CEGUI/Scrollbar"
+                   LookNFeel="MankindDefenders/VerticalScrollbar"  Renderer="Falagard/Scrollbar" />
+
+  <FalagardMapping WindowType="MankindDefenders/ProgressBar" TargetType="CEGUI/ProgressBar"
+                   LookNFeel="MankindDefenders/ProgressBar"  Renderer="Falagard/ProgressBar" />
+
+  <!-- ******************************************************************************** -->
+  <!--                          Elementos auxiliares de apoyo                           -->
+  <!-- ******************************************************************************** -->
+
+  <FalagardMapping WindowType="MankindDefenders/Tooltip" TargetType="CEGUI/Tooltip"
+                   LookNFeel="MankindDefenders/Tooltip"  Renderer="Falagard/Tooltip" />
+
+  <FalagardMapping WindowType="MankindDefenders/DialogTitlebar" TargetType="CEGUI/Titlebar"
+                   LookNFeel="MankindDefenders/DialogTitlebar"  Renderer="Falagard/Titlebar" />
+
+  <FalagardMapping WindowType="MankindDefenders/ComboDropList" TargetType="CEGUI/ComboDropList"
+                   LookNFeel="MankindDefenders/ComboDropList"  Renderer="Falagard/Listbox" />
+
+  <FalagardMapping WindowType="MankindDefenders/ListHeader" TargetType="CEGUI/ListHeader"
+                   LookNFeel="MankindDefenders/ListHeader"  Renderer="Falagard/ListHeader" />
+
+  <FalagardMapping WindowType="MankindDefenders/HeaderSegment" TargetType="CEGUI/ListHeaderSegment"
+                   LookNFeel="MankindDefenders/HeaderSegment"  Renderer="Falagard/ListHeaderSegment" />
+
+  <FalagardMapping WindowType="MankindDefenders/TabButton" TargetType="CEGUI/TabButton"
+                   LookNFeel="MankindDefenders/TabButton"  Renderer="Falagard/TabButton" />
+
+  <FalagardMapping WindowType="OgreTray/TabButtonPanel" TargetType="DefaultWindow"
+                   LookNFeel="OgreTray/TabButtonPanel"  Renderer="Falagard/Default" />
+
+  <FalagardMapping WindowType="OgreTray/TabContentPanel" TargetType="DefaultWindow"
+                   LookNFeel="OgreTray/TabContentPanel"  Renderer="Falagard/Default" />
+
+</GUIScheme>

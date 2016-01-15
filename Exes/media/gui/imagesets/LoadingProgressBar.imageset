@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Imageset Name="LoadingProgressBar" Imagefile="LoadingProgressBar.png" NativeHorzRes="1000" NativeVertRes="751" AutoScaled="true" >
+    <Image Name="ProgressBar0" XPos="0" YPos="0" Width="665" Height="34" />
+    <Image Name="ProgressBar25" XPos="0" YPos="44" Width="665" Height="34" />
+    <Image Name="ProgressBar50" XPos="0" YPos="92" Width="665" Height="34" />
+    <Image Name="ProgressBar75" XPos="0" YPos="140" Width="665" Height="34" />
+	<Image Name="ProgressBar100" XPos="0" YPos="193" Width="665" Height="34" />
+</Imageset>

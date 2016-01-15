@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="ReleaseMission">
+    <Property Name="Text" Value="ReleaseMission" />
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+
+    <!-- TODO: Completar el fichero... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos decorativos                               -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: Fondo de prueba... -->
+    <Window Type="MankindDefenders/MenuBackground" Name="ReleaseMission/Background">
+      <Property Name="Image" Value="set:TestBackground image:TestBackground43" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+    </Window>
+    <!-- FIN: Fondo de prueba... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos interactivos                              -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: XXX de prueba... -->
+    <Window Type="MankindDefenders/StaticText" Name="ReleaseMission/Title">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="DejaVuSans-10" />
+      <Property Name="FrameEnabled" Value="True" />
+      <Property Name="BackgroundEnabled" Value="True" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.2,0},{0.9,0},{0.3,0}}" />
+      <Property Name="Text" Value="Loading game menu..." />
+    </Window>
+    <!-- FIN: XXX de prueba... -->
+  </Window>
+</GUILayout>

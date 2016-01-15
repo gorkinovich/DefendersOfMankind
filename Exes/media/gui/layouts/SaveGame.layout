@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="SaveGame">
+    <Property Name="Text" Value="SaveGame" />
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+
+    <!-- TODO: Completar el fichero... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos decorativos                               -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: Fondo de prueba... -->
+    <Window Type="MankindDefenders/MenuBackground" Name="SaveGame/Background">
+      <Property Name="Image" Value="set:TestBackground image:TestBackground43" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+    </Window>
+    <!-- FIN: Fondo de prueba... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos interactivos                              -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: XXX de prueba... -->
+    <Window Type="MankindDefenders/Panel" Name="SaveGame/MainDialog">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.9,0},{0.9,0}}" />
+
+      <Window Type="MankindDefenders/StaticText" Name="SaveGame/Message">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.05,0},{0.9,0},{0.15,0}}" />
+        <Property Name="Text" Value="Select a game:" />
+      </Window>
+
+      <Window Type="MankindDefenders/Editbox" Name="SaveGame/Savefile">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.16,0},{0.9,0},{0.26,0}}" />
+        <Property Name="ReadOnly" Value="False" />
+        <Property Name="Text" Value="" />
+      </Window>
+
+      <Window Type="MankindDefenders/SimpleListbox" Name="SaveGame/SavefilesList">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.28,0},{0.9,0},{0.7,0}}" />
+        <Property Name="Text" Value="Saves" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="SaveGame/SaveButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.8,0},{0.4,0},{0.9,0}}" />
+        <Property Name="Text" Value="Save" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="SaveGame/CancelButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.6,0},{0.8,0},{0.8,0},{0.9,0}}" />
+        <Property Name="Text" Value="Cancel" />
+      </Window>
+    </Window>
+    <!-- FIN: XXX de prueba... -->
+  </Window>
+</GUILayout>

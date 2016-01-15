@@ -1,0 +1,373 @@
+<?xml version="1.0" ?>
+
+<!--
+    OgreTray.looknfeel by Paul D. Turner
+
+    This looknfeel specifies a set of WidgetLook definitions that are intended
+    to recreate the overall look of Ogre's new SDK tray system within CEGUI.
+    
+    This looknfeel has been made for use in some upcoming recreations of the
+    Ogre samples, that use CEGUI instead of the new Ogre SDK tray system.  This
+    is being done mostly for fun, though also to demonstrate the use of CEGUI
+    with Ogre.
+-->
+<Falagard>
+
+<!--
+:::: NewButton
+-->
+    <WidgetLook name="DoM/NewButton">
+        <PropertyDefinition name="NormalTextColour" initialValue="FF000000" redrawOnWrite="true" />
+        <PropertyDefinition name="HoverTextColour" initialValue="FF000000" redrawOnWrite="true" />
+        <PropertyDefinition name="PushedTextColour" initialValue="FF000000" redrawOnWrite="true" />
+        <PropertyDefinition name="DisabledTextColour" initialValue="FF888888" redrawOnWrite="true" />
+        <ImagerySection name="label">
+            <TextComponent>
+                <Area>
+                    <Dim type="LeftEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="TopEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="RightEdge"><UnifiedDim scale="1" type="RightEdge" /></Dim>
+                    <Dim type="BottomEdge"><UnifiedDim scale="1" type="BottomEdge" /></Dim>
+                </Area>
+                <VertFormat type="CentreAligned" />
+                <HorzFormat type="WordWrapCentreAligned" />
+            </TextComponent>
+        </ImagerySection>
+        <ImagerySection name="normal">
+            <FrameComponent>
+                <Area>
+                    <Dim type="LeftEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="TopEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="RightEdge"><UnifiedDim scale="1" type="RightEdge" /></Dim>
+                    <Dim type="BottomEdge"><UnifiedDim scale="1" type="BottomEdge" /></Dim>
+                </Area>
+                <Image type="TopLeftCorner" imageset="DoM" image="NormalButtonUpTL" />
+                <Image type="TopRightCorner" imageset="DoM" image="NormalButtonUpTR" />
+                <Image type="BottomLeftCorner" imageset="DoM" image="NormalButtonUpBL" />
+                <Image type="BottomRightCorner" imageset="DoM" image="NormalButtonUpBR" />
+                <Image type="LeftEdge" imageset="DoM" image="NormalButtonUpL" />
+                <Image type="TopEdge" imageset="DoM" image="NormalButtonUpT" />
+                <Image type="RightEdge" imageset="DoM" image="NormalButtonUpR" />
+                <Image type="BottomEdge" imageset="DoM" image="NormalButtonUpB" />
+                <Image type="Background" imageset="DoM" image="NormalButtonUpM" />
+            </FrameComponent>
+        </ImagerySection>
+        <ImagerySection name="hover">
+            <FrameComponent>
+                <Area>
+                    <Dim type="LeftEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="TopEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="RightEdge"><UnifiedDim scale="1" type="RightEdge" /></Dim>
+                    <Dim type="BottomEdge"><UnifiedDim scale="1" type="BottomEdge" /></Dim>
+                </Area>
+                <Image type="TopLeftCorner" imageset="DoM" image="NewButtonOverTL" />
+                <Image type="TopRightCorner" imageset="DoM" image="NewButtonOverTR" />
+                <Image type="BottomLeftCorner" imageset="DoM" image="NewButtonOverBL" />
+                <Image type="BottomRightCorner" imageset="DoM" image="NewButtonOverBR" />
+                <Image type="LeftEdge" imageset="DoM" image="NewButtonOverL" />
+                <Image type="TopEdge" imageset="DoM" image="NewButtonOverT" />
+                <Image type="RightEdge" imageset="DoM" image="NewButtonOverR" />
+                <Image type="BottomEdge" imageset="DoM" image="NewButtonOverB" />
+                <Image type="Background" imageset="DoM" image="NewButtonOverM" />
+            </FrameComponent>
+        </ImagerySection>
+        <ImagerySection name="pushed">
+            <FrameComponent>
+                <Area>
+                    <Dim type="LeftEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="TopEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="RightEdge"><UnifiedDim scale="1" type="RightEdge" /></Dim>
+                    <Dim type="BottomEdge"><UnifiedDim scale="1" type="BottomEdge" /></Dim>
+                </Area>
+                <Image type="TopLeftCorner" imageset="DoM" image="NewButtonDownTL" />
+                <Image type="TopRightCorner" imageset="DoM" image="NewButtonDownTR" />
+                <Image type="BottomLeftCorner" imageset="DoM" image="NewButtonDownBL" />
+                <Image type="BottomRightCorner" imageset="DoM" image="NewButtonDownBR" />
+                <Image type="LeftEdge" imageset="DoM" image="NewButtonDownL" />
+                <Image type="TopEdge" imageset="DoM" image="NewButtonDownT" />
+                <Image type="RightEdge" imageset="DoM" image="NewButtonDownR" />
+                <Image type="BottomEdge" imageset="DoM" image="NewButtonDownB" />
+                <Image type="Background" imageset="DoM" image="NewButtonDownM" />
+            </FrameComponent>
+        </ImagerySection>
+        <StateImagery name="Normal">
+            <Layer>
+                <Section section="normal" />
+                <Section section="label">
+                    <ColourProperty name="NormalTextColour" />
+                </Section>
+            </Layer>
+        </StateImagery>
+        <StateImagery name="Hover">
+            <Layer>
+                <Section section="hover" />
+                <Section section="label">
+                    <ColourProperty name="HoverTextColour" />
+                </Section>
+            </Layer>
+        </StateImagery>
+        <StateImagery name="Pushed">
+            <Layer>
+                <Section section="pushed" />
+                <Section section="label">
+                    <ColourProperty name="PushedTextColour" />
+                </Section>
+            </Layer>
+        </StateImagery>
+        <StateImagery name="PushedOff">
+            <Layer>
+                <Section section="hover" />
+                <Section section="label">
+                    <ColourProperty name="HoverTextColour" />
+                </Section>
+            </Layer>
+        </StateImagery>
+        <StateImagery name="Disabled">
+            <Layer>
+                <Section section="normal" />
+                <Section section="label">
+                    <ColourProperty name="DisabledTextColour" />
+                </Section>
+            </Layer>
+        </StateImagery>
+    </WidgetLook>
+
+<!--
+:::: OptionButton
+-->
+    <WidgetLook name="DoM/OptionButton">
+        <PropertyDefinition name="NormalTextColour" initialValue="FF000000" redrawOnWrite="true" />
+        <PropertyDefinition name="HoverTextColour" initialValue="FF000000" redrawOnWrite="true" />
+        <PropertyDefinition name="PushedTextColour" initialValue="FF000000" redrawOnWrite="true" />
+        <PropertyDefinition name="DisabledTextColour" initialValue="FF888888" redrawOnWrite="true" />
+        <ImagerySection name="label">
+            <TextComponent>
+                <Area>
+                    <Dim type="LeftEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="TopEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="RightEdge"><UnifiedDim scale="1" type="RightEdge" /></Dim>
+                    <Dim type="BottomEdge"><UnifiedDim scale="1" type="BottomEdge" /></Dim>
+                </Area>
+                <VertFormat type="CentreAligned" />
+                <HorzFormat type="WordWrapCentreAligned" />
+            </TextComponent>
+        </ImagerySection>
+        <ImagerySection name="normal">
+            <FrameComponent>
+                <Area>
+                    <Dim type="LeftEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="TopEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="RightEdge"><UnifiedDim scale="1" type="RightEdge" /></Dim>
+                    <Dim type="BottomEdge"><UnifiedDim scale="1" type="BottomEdge" /></Dim>
+                </Area>
+                <Image type="TopLeftCorner" imageset="DoM" image="NormalButtonUpTL" />
+                <Image type="TopRightCorner" imageset="DoM" image="NormalButtonUpTR" />
+                <Image type="BottomLeftCorner" imageset="DoM" image="NormalButtonUpBL" />
+                <Image type="BottomRightCorner" imageset="DoM" image="NormalButtonUpBR" />
+                <Image type="LeftEdge" imageset="DoM" image="NormalButtonUpL" />
+                <Image type="TopEdge" imageset="DoM" image="NormalButtonUpT" />
+                <Image type="RightEdge" imageset="DoM" image="NormalButtonUpR" />
+                <Image type="BottomEdge" imageset="DoM" image="NormalButtonUpB" />
+                <Image type="Background" imageset="DoM" image="NormalButtonUpM" />
+            </FrameComponent>
+        </ImagerySection>
+        <ImagerySection name="hover">
+            <FrameComponent>
+                <Area>
+                    <Dim type="LeftEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="TopEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="RightEdge"><UnifiedDim scale="1" type="RightEdge" /></Dim>
+                    <Dim type="BottomEdge"><UnifiedDim scale="1" type="BottomEdge" /></Dim>
+                </Area>
+                <Image type="TopLeftCorner" imageset="DoM" image="OptionButtonOverTL" />
+                <Image type="TopRightCorner" imageset="DoM" image="OptionButtonOverTR" />
+                <Image type="BottomLeftCorner" imageset="DoM" image="OptionButtonOverBL" />
+                <Image type="BottomRightCorner" imageset="DoM" image="OptionButtonOverBR" />
+                <Image type="LeftEdge" imageset="DoM" image="OptionButtonOverL" />
+                <Image type="TopEdge" imageset="DoM" image="OptionButtonOverT" />
+                <Image type="RightEdge" imageset="DoM" image="OptionButtonOverR" />
+                <Image type="BottomEdge" imageset="DoM" image="OptionButtonOverB" />
+                <Image type="Background" imageset="DoM" image="OptionButtonOverM" />
+            </FrameComponent>
+        </ImagerySection>
+        <ImagerySection name="pushed">
+            <FrameComponent>
+                <Area>
+                    <Dim type="LeftEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="TopEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="RightEdge"><UnifiedDim scale="1" type="RightEdge" /></Dim>
+                    <Dim type="BottomEdge"><UnifiedDim scale="1" type="BottomEdge" /></Dim>
+                </Area>
+                <Image type="TopLeftCorner" imageset="DoM" image="OptionButtonDownTL" />
+                <Image type="TopRightCorner" imageset="DoM" image="OptionButtonDownTR" />
+                <Image type="BottomLeftCorner" imageset="DoM" image="OptionButtonDownBL" />
+                <Image type="BottomRightCorner" imageset="DoM" image="OptionButtonDownBR" />
+                <Image type="LeftEdge" imageset="DoM" image="OptionButtonDownL" />
+                <Image type="TopEdge" imageset="DoM" image="OptionButtonDownT" />
+                <Image type="RightEdge" imageset="DoM" image="OptionButtonDownR" />
+                <Image type="BottomEdge" imageset="DoM" image="OptionButtonDownB" />
+                <Image type="Background" imageset="DoM" image="OptionButtonDownM" />
+            </FrameComponent>
+        </ImagerySection>
+        <StateImagery name="Normal">
+            <Layer>
+                <Section section="normal" />
+                <Section section="label">
+                    <ColourProperty name="NormalTextColour" />
+                </Section>
+            </Layer>
+        </StateImagery>
+        <StateImagery name="Hover">
+            <Layer>
+                <Section section="hover" />
+                <Section section="label">
+                    <ColourProperty name="HoverTextColour" />
+                </Section>
+            </Layer>
+        </StateImagery>
+        <StateImagery name="Pushed">
+            <Layer>
+                <Section section="pushed" />
+                <Section section="label">
+                    <ColourProperty name="PushedTextColour" />
+                </Section>
+            </Layer>
+        </StateImagery>
+        <StateImagery name="PushedOff">
+            <Layer>
+                <Section section="hover" />
+                <Section section="label">
+                    <ColourProperty name="HoverTextColour" />
+                </Section>
+            </Layer>
+        </StateImagery>
+        <StateImagery name="Disabled">
+            <Layer>
+                <Section section="normal" />
+                <Section section="label">
+                    <ColourProperty name="DisabledTextColour" />
+                </Section>
+            </Layer>
+        </StateImagery>
+    </WidgetLook>
+
+<!--
+:::: ExitButton
+-->
+    <WidgetLook name="DoM/ExitButton">
+        <PropertyDefinition name="NormalTextColour" initialValue="FF000000" redrawOnWrite="true" />
+        <PropertyDefinition name="HoverTextColour" initialValue="FF000000" redrawOnWrite="true" />
+        <PropertyDefinition name="PushedTextColour" initialValue="FF000000" redrawOnWrite="true" />
+        <PropertyDefinition name="DisabledTextColour" initialValue="FF888888" redrawOnWrite="true" />
+        <ImagerySection name="label">
+            <TextComponent>
+                <Area>
+                    <Dim type="LeftEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="TopEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="RightEdge"><UnifiedDim scale="1" type="RightEdge" /></Dim>
+                    <Dim type="BottomEdge"><UnifiedDim scale="1" type="BottomEdge" /></Dim>
+                </Area>
+                <VertFormat type="CentreAligned" />
+                <HorzFormat type="WordWrapCentreAligned" />
+            </TextComponent>
+        </ImagerySection>
+        <ImagerySection name="normal">
+            <FrameComponent>
+                <Area>
+                    <Dim type="LeftEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="TopEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="RightEdge"><UnifiedDim scale="1" type="RightEdge" /></Dim>
+                    <Dim type="BottomEdge"><UnifiedDim scale="1" type="BottomEdge" /></Dim>
+                </Area>
+                <Image type="TopLeftCorner" imageset="DoM" image="NormalButtonUpTL" />
+                <Image type="TopRightCorner" imageset="DoM" image="NormalButtonUpTR" />
+                <Image type="BottomLeftCorner" imageset="DoM" image="NormalButtonUpBL" />
+                <Image type="BottomRightCorner" imageset="DoM" image="NormalButtonUpBR" />
+                <Image type="LeftEdge" imageset="DoM" image="NormalButtonUpL" />
+                <Image type="TopEdge" imageset="DoM" image="NormalButtonUpT" />
+                <Image type="RightEdge" imageset="DoM" image="NormalButtonUpR" />
+                <Image type="BottomEdge" imageset="DoM" image="NormalButtonUpB" />
+                <Image type="Background" imageset="DoM" image="NormalButtonUpM" />
+            </FrameComponent>
+        </ImagerySection>
+        <ImagerySection name="hover">
+            <FrameComponent>
+                <Area>
+                    <Dim type="LeftEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="TopEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="RightEdge"><UnifiedDim scale="1" type="RightEdge" /></Dim>
+                    <Dim type="BottomEdge"><UnifiedDim scale="1" type="BottomEdge" /></Dim>
+                </Area>
+                <Image type="TopLeftCorner" imageset="DoM" image="ExitButtonOverTL" />
+                <Image type="TopRightCorner" imageset="DoM" image="ExitButtonOverTR" />
+                <Image type="BottomLeftCorner" imageset="DoM" image="ExitButtonOverBL" />
+                <Image type="BottomRightCorner" imageset="DoM" image="ExitButtonOverBR" />
+                <Image type="LeftEdge" imageset="DoM" image="ExitButtonOverL" />
+                <Image type="TopEdge" imageset="DoM" image="ExitButtonOverT" />
+                <Image type="RightEdge" imageset="DoM" image="ExitButtonOverR" />
+                <Image type="BottomEdge" imageset="DoM" image="ExitButtonOverB" />
+                <Image type="Background" imageset="DoM" image="ExitButtonOverM" />
+            </FrameComponent>
+        </ImagerySection>
+        <ImagerySection name="pushed">
+            <FrameComponent>
+                <Area>
+                    <Dim type="LeftEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="TopEdge"><AbsoluteDim value="0" /></Dim>
+                    <Dim type="RightEdge"><UnifiedDim scale="1" type="RightEdge" /></Dim>
+                    <Dim type="BottomEdge"><UnifiedDim scale="1" type="BottomEdge" /></Dim>
+                </Area>
+                <Image type="TopLeftCorner" imageset="DoM" image="ExitButtonDownTL" />
+                <Image type="TopRightCorner" imageset="DoM" image="ExitButtonDownTR" />
+                <Image type="BottomLeftCorner" imageset="DoM" image="ExitButtonDownBL" />
+                <Image type="BottomRightCorner" imageset="DoM" image="ExitButtonDownBR" />
+                <Image type="LeftEdge" imageset="DoM" image="ExitButtonDownL" />
+                <Image type="TopEdge" imageset="DoM" image="ExitButtonDownT" />
+                <Image type="RightEdge" imageset="DoM" image="ExitButtonDownR" />
+                <Image type="BottomEdge" imageset="DoM" image="ExitButtonDownB" />
+                <Image type="Background" imageset="DoM" image="ExitButtonDownM" />
+            </FrameComponent>
+        </ImagerySection>
+        <StateImagery name="Normal">
+            <Layer>
+                <Section section="normal" />
+                <Section section="label">
+                    <ColourProperty name="NormalTextColour" />
+                </Section>
+            </Layer>
+        </StateImagery>
+        <StateImagery name="Hover">
+            <Layer>
+                <Section section="hover" />
+                <Section section="label">
+                    <ColourProperty name="HoverTextColour" />
+                </Section>
+            </Layer>
+        </StateImagery>
+        <StateImagery name="Pushed">
+            <Layer>
+                <Section section="pushed" />
+                <Section section="label">
+                    <ColourProperty name="PushedTextColour" />
+                </Section>
+            </Layer>
+        </StateImagery>
+        <StateImagery name="PushedOff">
+            <Layer>
+                <Section section="hover" />
+                <Section section="label">
+                    <ColourProperty name="HoverTextColour" />
+                </Section>
+            </Layer>
+        </StateImagery>
+        <StateImagery name="Disabled">
+            <Layer>
+                <Section section="normal" />
+                <Section section="label">
+                    <ColourProperty name="DisabledTextColour" />
+                </Section>
+            </Layer>
+        </StateImagery>
+    </WidgetLook>
+	
+</Falagard>

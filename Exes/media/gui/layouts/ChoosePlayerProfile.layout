@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="ChoosePlayerProfile">
+    <Property Name="Text" Value="ChoosePlayerProfile" />
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+
+    <!-- TODO: Completar el fichero... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos decorativos                               -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: Fondo de prueba... -->
+    <Window Type="MankindDefenders/MenuBackground" Name="ChoosePlayerProfile/Background">
+      <Property Name="Image" Value="set:TestBackground image:TestBackground43" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+    </Window>
+    <!-- FIN: Fondo de prueba... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos interactivos                              -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: XXX de prueba... -->
+    <Window Type="MankindDefenders/Panel" Name="ChoosePlayerProfile/MainDialog">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.9,0},{0.9,0}}" />
+
+      <Window Type="MankindDefenders/StaticText" Name="ChoosePlayerProfile/Message">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.05,0},{0.9,0},{0.15,0}}" />
+        <Property Name="Text" Value="Select a profile:" />
+      </Window>
+
+      <Window Type="MankindDefenders/SimpleListbox" Name="ChoosePlayerProfile/ProfilesList">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.2,0},{0.9,0},{0.7,0}}" />
+        <Property Name="Text" Value="Player" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="ChoosePlayerProfile/AcceptButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.8,0},{0.4,0},{0.9,0}}" />
+        <Property Name="Text" Value="Accept" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="ChoosePlayerProfile/CancelButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.6,0},{0.8,0},{0.8,0},{0.9,0}}" />
+        <Property Name="Text" Value="Cancel" />
+      </Window>
+    </Window>
+    <!-- FIN: XXX de prueba... -->
+  </Window>
+</GUILayout>

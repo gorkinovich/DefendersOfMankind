@@ -1,0 +1,17 @@
+material Bifurcation
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 0 0 0.5
+			diffuse 1 0 0 0.5
+			specular 0 0 0 0.5 10
+			emissive 1 0 0
+			depth_write off
+			scene_blend alpha_blend
+		}
+	}
+}
+
+

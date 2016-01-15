@@ -1,0 +1,118 @@
+fragment_program testFP cg
+ {
+     source testShader.cg
+     entry_point main_fp
+     profiles ps_1_1 arbfp1
+ }
+
+
+
+material Material#90
+{
+	technique
+	{
+		pass
+		{
+			fragment_program_ref testFP
+			{
+			}
+			scene_blend alpha_blend
+			
+			ambient 1 0.501961 0 1
+			diffuse 1 0.501961 0 1
+			specular 0 0 0 1 10
+		}
+
+	}
+
+}
+
+
+
+material Material#91
+{
+	technique
+	{
+		pass
+		{
+			fragment_program_ref testFP
+			{
+			}
+			scene_blend alpha_blend
+			
+			ambient 0 0.733333 1 1
+			diffuse 0 0.733333 1 1
+			specular 0 0 0 1 10
+			cull_hardware none
+			cull_software none
+		}
+
+	}
+
+}
+
+
+
+material Material#92
+{
+	technique
+	{
+		pass
+		{
+			fragment_program_ref testFP
+			{
+			}
+			scene_blend alpha_blend
+			
+			ambient 1 0 0 1
+			diffuse 1 0 0 1
+			specular 0 0 0 1 10
+		}
+
+	}
+
+}
+
+
+
+material Material#93
+{
+	technique
+	{
+		pass
+		{
+			fragment_program_ref testFP
+			{
+			}
+			scene_blend alpha_blend
+			
+			ambient 0 0 0 1
+			diffuse 0 0 0 1
+			specular 0 0 0 1 10
+		}
+
+	}
+
+}
+
+
+
+material Material#94
+{
+	technique
+	{
+		pass
+		{
+			fragment_program_ref testFP
+			{
+			}
+			scene_blend alpha_blend
+			
+			specular 0 0 0 1 10
+		}
+
+	}
+
+}
+
+

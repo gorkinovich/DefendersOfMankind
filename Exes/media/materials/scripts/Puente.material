@@ -1,0 +1,21 @@
+
+material Puente
+{
+	technique
+	{
+		pass
+		{
+			specular 0 0 0 1 10
+			scene_blend one one_minus_src_alpha
+
+			texture_unit
+			{
+				texture Puente.png
+			}
+		}
+
+	}
+
+}
+
+

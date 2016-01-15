@@ -1,0 +1,4 @@
+<?xml version="1.0" ?>
+  <Imageset Name="LoadingBackground" Imagefile="LoadingBackground.jpg" AutoScaled="false" >
+  <Image Name="LoadingBackground" XPos="0" YPos="0" Width="1000" Height="751" />
+</Imageset>

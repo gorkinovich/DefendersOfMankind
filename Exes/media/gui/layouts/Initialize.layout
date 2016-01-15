@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="Initialize">
+    <Property Name="Text" Value="Initialize" />
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+
+    <!-- TODO: Completar el fichero... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos decorativos                               -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: Fondo de prueba... -->
+    <Window Type="MankindDefenders/MenuBackground" Name="Initialize/Background">
+      <Property Name="Image" Value="set:TestBackground image:TestBackground43" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+    </Window>
+    <!-- FIN: Fondo de prueba... -->
+
+    <!-- TODO: Logo de prueba... -->
+    <Window Type="MankindDefenders/StaticImage" Name="Initialize/GameLogo">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="CentreAligned" />
+      <Property Name="VertFormatting" Value="CentreAligned" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+      <Property Name="Image" Value="set:Logo image:Logo" />
+    </Window>
+    <!-- FIN: Logo de prueba... -->
+  </Window>
+</GUILayout>

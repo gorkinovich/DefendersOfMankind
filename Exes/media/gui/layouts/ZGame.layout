@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout>
+	<Window Type="DefaultWindow" Name="Game" >
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+		
+		
+			<Window Type="MankindDefenders/StaticText" Name="GameScore" >
+				<Property Name="Font" Value="DejaVuSans-10" />
+				<Property Name="Text" Value="0" />
+				<Property Name="AlwaysOnTop" Value="True" />
+				<Property Name="UnifiedAreaRect" Value="{{0.88,0},{0,0},{1,0},{0.08,0}}" />
+			</Window>
+			
+			<Window Type="MankindDefenders/StaticText" Name="InfoDebug" >
+				<Property Name="Font" Value="DejaVuSans-10" />
+				<Property Name="Text" Value="FPS: 0" />
+				<Property Name="AlwaysOnTop" Value="True" />
+				<Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.89,0},{0.24,0},{0.99,0}}" />
+			</Window>
+			
+			
+			<Window Type="MankindDefenders/Sprite" Name="LifeBar1" >
+				<Property Name="Image"  Value="set:HUD image:P1LifeBar1" />
+			</Window>
+			<Window Type="MankindDefenders/Sprite" Name="LifeBar2" >
+				<Property Name="Image"  Value="set:HUD image:P1LifeBar2" />
+			</Window>
+			<Window Type="MankindDefenders/Sprite" Name="LifeBar3" >
+				<Property Name="Image"  Value="set:HUD image:P1LifeBar3" />
+			</Window>
+			<Window Type="MankindDefenders/Sprite" Name="LifeBar4" >
+				<Property Name="Image"  Value="set:HUD image:P1LifeBar4" />
+			</Window>
+			<Window Type="MankindDefenders/Sprite" Name="LifeBar5" >
+				<Property Name="Image"  Value="set:HUD image:P1LifeBar5" />
+			</Window>
+			<Window Type="MankindDefenders/Sprite" Name="LifeBar6" >
+				<Property Name="Image"  Value="set:HUD image:P1LifeBar6" />
+			</Window>
+			<Window Type="MankindDefenders/Sprite" Name="LifeBar7" >
+				<Property Name="Image"  Value="set:HUD image:P1LifeBar7" />
+			</Window>
+			<Window Type="MankindDefenders/Sprite" Name="LifeBar8" >
+				<Property Name="Image"  Value="set:HUD image:P1LifeBar8" />
+			</Window>
+			<Window Type="MankindDefenders/Sprite" Name="LifeBar9" >
+				<Property Name="Image"  Value="set:HUD image:P1LifeBar9" />
+			</Window>
+			<Window Type="MankindDefenders/Sprite" Name="LifeBar10" >
+				<Property Name="Image"  Value="set:HUD image:P1LifeBar10" />
+			</Window>
+			<Window Type="MankindDefenders/Sprite" Name="LifeBar11" >
+				<Property Name="Image"  Value="set:HUD image:P1LifeBar11" />
+			</Window>
+			<Window Type="MankindDefenders/Sprite" Name="LifeBar12" >
+				<Property Name="Image"  Value="set:HUD image:P1LifeBar12" />
+			</Window>
+			<Window Type="MankindDefenders/Sprite" Name="LifeBar13" >
+				<Property Name="Image"  Value="set:HUD image:P1LifeBar13" />
+			</Window>
+			<Window Type="MankindDefenders/Sprite" Name="LifeBar14" >
+				<Property Name="Image"  Value="set:HUD image:P1LifeBar14" />
+			</Window>
+			<Window Type="MankindDefenders/Sprite" Name="LifeBar15" >
+				<Property Name="Image"  Value="set:HUD image:P1LifeBar15" />
+			</Window>
+			<Window Type="MankindDefenders/Sprite" Name="LifeBar16" >
+				<Property Name="Image"  Value="set:HUD image:P1LifeBar16" />
+			</Window>
+			<Window Type="MankindDefenders/Sprite" Name="LifeBar17" >
+				<Property Name="Image"  Value="set:HUD image:P1LifeBar17" />
+			</Window>
+			<Window Type="MankindDefenders/Sprite" Name="LifeBar18" >
+				<Property Name="Image"  Value="set:HUD image:P1LifeBar18" />
+			</Window>
+			<Window Type="MankindDefenders/Sprite" Name="LifeBar19" >
+				<Property Name="Image"  Value="set:HUD image:P1LifeBar19" />
+			</Window>
+			<Window Type="MankindDefenders/Sprite" Name="LifeBar20" >
+				<Property Name="Image"  Value="set:HUD image:P1LifeBar20" />
+			</Window>
+			
+			
+			<Window Type="MankindDefenders/Sprite" Name="LifePicture1" >
+				<Property Name="Image"  Value="set:HUD image:LifePicture" />
+			</Window>
+			<Window Type="MankindDefenders/Sprite" Name="LifePicture2" >
+				<Property Name="Image"  Value="set:HUD image:LifePicture" />
+			</Window>
+			<Window Type="MankindDefenders/Sprite" Name="LifePicture3" >
+				<Property Name="Image"  Value="set:HUD image:LifePicture" />
+			</Window>
+
+	</Window>
+</GUILayout>
+

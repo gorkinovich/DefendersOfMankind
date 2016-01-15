@@ -1,0 +1,1291 @@
+system Explosion
+{
+    scale_velocity                              0.15
+    scale                                       0.15 0.15 0.15
+    technique 
+    {
+        visual_particle_quota                   70
+        material                                mp_explosion_debris
+        renderer                                Billboard
+        {
+            soft_particles_scale                0.25
+            billboard_type                      oriented_self
+            billboard_rotation_type             vertex
+        }
+        emitter                                 Point 
+        {
+            emission_rate                       200
+            angle                               360
+            time_to_live                        dyn_random
+            {
+                min                             0.5
+                max                             1.2
+            }
+            velocity                            dyn_random
+            {
+                min                             300
+                max                             500
+            }
+            duration                            0.2
+            colour                              0 0 0 1
+        }
+        affector                                ScaleVelocity 
+        {
+            velocity_scale                      dyn_curved_linear
+            {
+                control_point                   0 -1500
+                control_point                   0.3 -200
+            }
+        }
+        affector                                Scale 
+        {
+            xyz_scale                           500
+        }
+        affector                                Colour 
+        {
+            time_colour                         0    0.984314 0.992157 0.67451 1
+            time_colour                         0.5  0.941176 0.321569 0.137255 1
+            time_colour                         1    0 0 0 1
+        }
+        affector                                TextureRotator 
+        {
+            rotation                            dyn_random
+            {
+                min                             -3
+                max                             3
+            }
+            rotation_speed                      0
+        }
+        observer                                OnTime 
+        {
+            observe_until_event                 true
+            handler                             DoStopSystem 
+            {
+            }
+            since_start_system                  true
+            on_time                             greater_than 2
+        }
+    }
+    technique 
+    {
+        visual_particle_quota                   60
+        material                                mp_explosion_smoke_01_add
+        renderer                                Billboard
+        {
+            soft_particles_scale                0.25
+            billboard_rotation_type             vertex
+        }
+        emitter                                 Point 
+        {
+            emission_rate                       600
+            angle                               360
+            time_to_live                        dyn_random
+            {
+                min                             0.6
+                max                             1.6
+            }
+            velocity                            dyn_random
+            {
+                min                             100
+                max                             200
+            }
+            duration                            0.1
+            colour                              0 0 0 1
+        }
+        affector                                Scale 
+        {
+            xyz_scale                           dyn_curved_linear
+            {
+                control_point                   0 350
+                control_point                   1.8 -100
+            }
+        }
+        affector                                Colour 
+        {
+            time_colour                         0    0.992157 0.956863 0.537255 1
+            time_colour                         0.4  0.67451 0.172549 0.0235294 1
+            time_colour                         1    0 0 0 1
+        }
+        affector                                TextureRotator 
+        {
+            rotation                            dyn_random
+            {
+                min                             -3
+                max                             3
+            }
+            rotation_speed                      dyn_random
+            {
+                min                             -1
+                max                             1
+            }
+        }
+        affector                                ScaleVelocity 
+        {
+            velocity_scale                      -100
+        }
+        observer                                OnEmission 
+        {
+            handler                             DoPlacementParticle 
+            {
+                force_emitter                   BlackSmokeEmitter
+                inherit_direction               true
+                inherit_time_to_live            true
+                inherit_width                   true
+                inherit_height                  true
+                inherit_depth                   true
+            }
+        }
+    }
+    technique 
+    {
+        visual_particle_quota                   60
+        material                                mp_explosion_smoke_01
+        renderer                                Billboard
+        {
+            render_queue_group                  51
+            soft_particles_scale                0.25
+            billboard_rotation_type             vertex
+        }
+        emitter                                 Point BlackSmokeEmitter
+        {
+            emission_rate                       0
+            angle                               360
+            time_to_live                        1
+            velocity                            dyn_random
+            {
+                min                             100
+                max                             200
+            }
+            colour                              1 1 1 0
+        }
+        affector                                Scale 
+        {
+            xyz_scale                           dyn_curved_linear
+            {
+                control_point                   0 300
+                control_point                   1.8 -100
+            }
+        }
+        affector                                ScaleVelocity 
+        {
+            velocity_scale                      -100
+        }
+        affector                                Colour 
+        {
+            time_colour                         0    0.298039 0.298039 0.298039 0
+            time_colour                         0.5  0.298039 0.298039 0.298039 0
+            time_colour                         0.8  0.298039 0.298039 0.298039 0.5
+            time_colour                         1    0.298039 0.298039 0.298039 0
+        }
+        affector                                TextureRotator 
+        {
+            rotation                            dyn_random
+            {
+                min                             -3
+                max                             3
+            }
+            rotation_speed                      dyn_random
+            {
+                min                             -1
+                max                             1
+            }
+        }
+    }
+}
+
+system BigExplosion
+{
+    scale_velocity                              0.7
+    scale                                       0.7 0.7 0.7
+    technique 
+    {
+        visual_particle_quota                   70
+        material                                mp_explosion_debris
+        renderer                                Billboard
+        {
+            soft_particles_scale                0.25
+            billboard_type                      oriented_self
+            billboard_rotation_type             vertex
+        }
+        emitter                                 Point 
+        {
+            emission_rate                       200
+            angle                               360
+            time_to_live                        dyn_random
+            {
+                min                             0.5
+                max                             1.2
+            }
+            velocity                            dyn_random
+            {
+                min                             300
+                max                             500
+            }
+            duration                            0.2
+            colour                              0 0 0 1
+        }
+        affector                                ScaleVelocity 
+        {
+            velocity_scale                      dyn_curved_linear
+            {
+                control_point                   0 -1500
+                control_point                   0.3 -200
+            }
+        }
+        affector                                Scale 
+        {
+            xyz_scale                           500
+        }
+        affector                                Colour 
+        {
+            time_colour                         0    0.984314 0.992157 0.67451 1
+            time_colour                         0.5  0.941176 0.321569 0.137255 1
+            time_colour                         1    0 0 0 1
+        }
+        affector                                TextureRotator 
+        {
+            rotation                            dyn_random
+            {
+                min                             -3
+                max                             3
+            }
+            rotation_speed                      0
+        }
+        observer                                OnTime 
+        {
+            observe_until_event                 true
+            handler                             DoStopSystem 
+            {
+            }
+            since_start_system                  true
+            on_time                             greater_than 2
+        }
+    }
+    technique 
+    {
+        visual_particle_quota                   60
+        material                                mp_explosion_smoke_01_add
+        renderer                                Billboard
+        {
+            soft_particles_scale                0.25
+            billboard_rotation_type             vertex
+        }
+        emitter                                 Point 
+        {
+            emission_rate                       600
+            angle                               360
+            time_to_live                        dyn_random
+            {
+                min                             0.6
+                max                             1.6
+            }
+            velocity                            dyn_random
+            {
+                min                             100
+                max                             200
+            }
+            duration                            0.1
+            colour                              0 0 0 1
+        }
+        affector                                Scale 
+        {
+            xyz_scale                           dyn_curved_linear
+            {
+                control_point                   0 350
+                control_point                   1.8 -100
+            }
+        }
+        affector                                Colour 
+        {
+            time_colour                         0    0.992157 0.956863 0.537255 1
+            time_colour                         0.4  0.67451 0.172549 0.0235294 1
+            time_colour                         1    0 0 0 1
+        }
+        affector                                TextureRotator 
+        {
+            rotation                            dyn_random
+            {
+                min                             -3
+                max                             3
+            }
+            rotation_speed                      dyn_random
+            {
+                min                             -1
+                max                             1
+            }
+        }
+        affector                                ScaleVelocity 
+        {
+            velocity_scale                      -100
+        }
+        observer                                OnEmission 
+        {
+            handler                             DoPlacementParticle 
+            {
+                force_emitter                   BlackSmokeEmitter
+                inherit_direction               true
+                inherit_time_to_live            true
+                inherit_width                   true
+                inherit_height                  true
+                inherit_depth                   true
+            }
+        }
+    }
+    technique 
+    {
+        visual_particle_quota                   60
+        material                                mp_explosion_smoke_01
+        renderer                                Billboard
+        {
+            render_queue_group                  51
+            soft_particles_scale                0.25
+            billboard_rotation_type             vertex
+        }
+        emitter                                 Point BlackSmokeEmitter
+        {
+            emission_rate                       0
+            angle                               360
+            time_to_live                        1
+            velocity                            dyn_random
+            {
+                min                             100
+                max                             200
+            }
+            colour                              1 1 1 0
+        }
+        affector                                Scale 
+        {
+            xyz_scale                           dyn_curved_linear
+            {
+                control_point                   0 300
+                control_point                   1.8 -100
+            }
+        }
+        affector                                ScaleVelocity 
+        {
+            velocity_scale                      -100
+        }
+        affector                                Colour 
+        {
+            time_colour                         0    0.298039 0.298039 0.298039 0
+            time_colour                         0.5  0.298039 0.298039 0.298039 0
+            time_colour                         0.8  0.298039 0.298039 0.298039 0.5
+            time_colour                         1    0.298039 0.298039 0.298039 0
+        }
+        affector                                TextureRotator 
+        {
+            rotation                            dyn_random
+            {
+                min                             -3
+                max                             3
+            }
+            rotation_speed                      dyn_random
+            {
+                min                             -1
+                max                             1
+            }
+        }
+    }
+}
+
+system Chispas
+{
+    scale_velocity                              0.250
+    scale                                       0.250 0.250 0.250
+    technique 
+    {
+        visual_particle_quota                   300
+        material                                mp_hit_metal_sparkle
+        renderer                                Billboard
+        {
+            billboard_type                      oriented_self
+            billboard_origin                    bottom_center
+            billboard_rotation_type             vertex
+        }
+        emitter                                 Point 
+        {
+            emission_rate                       400
+            angle                               360
+            time_to_live                        dyn_random
+            {
+                min                             0.2
+                max                             0.4
+            }
+            velocity                            dyn_random
+            {
+                min                             200
+                max                             500
+            }
+            duration                            0.3
+            particle_width                      dyn_random
+            {
+                min                             10
+                max                             20
+            }
+            particle_height                     dyn_random
+            {
+                min                             5
+                max                             20
+            }
+            direction                           1 0.5 0
+            force_emission                      true
+        }
+        affector                                Colour 
+        {
+            time_colour                         0    0.968627 0.890196 0.792157 1
+            time_colour                         1    0 0 0 0
+        }
+        affector                                Scale 
+        {
+            x_scale                             -10
+            y_scale                             50
+        }
+        affector                                ScaleVelocity 
+        {
+            velocity_scale                      dyn_curved_linear
+            {
+                control_point                   0 -1000
+                control_point                   1 0
+            }
+        }
+        observer                                OnClear 
+        {
+            handler                             DoStopSystem 
+            {
+            }
+        }
+    }
+}
+
+system BigChispas
+{
+    scale_velocity                              0.65
+    scale                                       0.65 0.65 0.65
+    technique 
+    {
+        visual_particle_quota                   300
+        material                                mp_hit_metal_sparkle
+        renderer                                Billboard
+        {
+            billboard_type                      oriented_self
+            billboard_origin                    bottom_center
+            billboard_rotation_type             vertex
+        }
+        emitter                                 Point 
+        {
+            emission_rate                       400
+            angle                               360
+            time_to_live                        dyn_random
+            {
+                min                             0.2
+                max                             0.4
+            }
+            velocity                            dyn_random
+            {
+                min                             200
+                max                             500
+            }
+            duration                            0.3
+            particle_width                      dyn_random
+            {
+                min                             10
+                max                             20
+            }
+            particle_height                     dyn_random
+            {
+                min                             5
+                max                             20
+            }
+            direction                           1 0.5 0
+            force_emission                      true
+        }
+        affector                                Colour 
+        {
+            time_colour                         0    0.968627 0.890196 0.792157 1
+            time_colour                         1    0 0 0 0
+        }
+        affector                                Scale 
+        {
+            x_scale                             -10
+            y_scale                             50
+        }
+        affector                                ScaleVelocity 
+        {
+            velocity_scale                      dyn_curved_linear
+            {
+                control_point                   0 -1000
+                control_point                   1 0
+            }
+        }
+        observer                                OnClear 
+        {
+            handler                             DoStopSystem 
+            {
+            }
+        }
+    }
+}
+
+system GreenBullet
+{
+    keep_local                                  true
+    scale                                       0.025 0.025 0.025
+    technique 
+    {
+        visual_particle_quota                   12
+        material                                mp_flare_04
+        default_particle_width                  5
+        default_particle_height                 5
+        renderer                                Billboard
+        {
+            billboard_rotation_type             vertex
+        }
+        emitter                                 Point 
+        {
+            emission_rate                       20
+            time_to_live                        dyn_random
+            {
+                min                             0.2
+                max                             0.6
+            }
+            velocity                            0
+            direction                           0 0 0
+            colour                              0.501961 1 0 1
+        }
+        affector                                Scale 
+        {
+            xyz_scale                           dyn_curved_linear
+            {
+                control_point                   0 1500
+                control_point                   1 -1500
+            }
+        }
+        affector                                TextureRotator 
+        {
+            use_own_rotation                    true
+            rotation                            dyn_random
+            {
+                min                             -3
+                max                             3
+            }
+            rotation_speed                      0
+        }
+    }
+}
+
+system PowerBullet
+{
+    keep_local                                  true
+    scale                                       0.025 0.025 0.025
+    technique 
+    {
+        visual_particle_quota                   12
+        material                                mp_flare_04
+        default_particle_width                  5
+        default_particle_height                 5
+        renderer                                Billboard
+        {
+            billboard_rotation_type             vertex
+        }
+        emitter                                 Point 
+        {
+            emission_rate                       20
+            time_to_live                        dyn_random
+            {
+                min                             0.2
+                max                             0.6
+            }
+            velocity                            0
+            direction                           0 0 0
+            colour                              0 0.5 1 1
+        }
+        affector                                Scale 
+        {
+            xyz_scale                           dyn_curved_linear
+            {
+                control_point                   0 1500
+                control_point                   1 -1500
+            }
+        }
+        affector                                TextureRotator 
+        {
+            use_own_rotation                    true
+            rotation                            dyn_random
+            {
+                min                             -3
+                max                             3
+            }
+            rotation_speed                      0
+        }
+    }
+}
+
+system RedBullet
+{
+    keep_local                                  true
+    scale                                       0.025 0.025 0.025
+    technique 
+    {
+        visual_particle_quota                   12
+        material                                mp_flare_04
+        default_particle_width                  5
+        default_particle_height                 5
+        renderer                                Billboard
+        {
+            billboard_rotation_type             vertex
+        }
+        emitter                                 Point 
+        {
+            emission_rate                       20
+            time_to_live                        dyn_random
+            {
+                min                             0.2
+                max                             0.6
+            }
+            velocity                            0
+            particle_width                      1
+            particle_height                     1
+            particle_depth                      1
+            direction                           0 0 0
+            colour                              1 0.25098 0.25098 1
+        }
+        affector                                Scale 
+        {
+            xyz_scale                           dyn_curved_linear
+            {
+                control_point                   0 1500
+                control_point                   1 -1500
+            }
+        }
+        affector                                TextureRotator 
+        {
+            use_own_rotation                    true
+            rotation                            dyn_random
+            {
+                min                             -3
+                max                             3
+            }
+            rotation_speed                      0
+        }
+    }
+}
+
+system Rocket
+{
+    keep_local                                  true
+    scale                                       0.125 0.125 0.125
+    technique 
+    {
+        visual_particle_quota                   30
+        material                                mp_weapon_rocket_01_1x4
+        renderer                                Billboard
+        {
+            texture_coords_columns              4
+            billboard_type                      oriented_self
+            billboard_origin                    bottom_center
+            billboard_rotation_type             vertex
+        }
+        emitter                                 Point 
+        {
+            emission_rate                       300
+            angle                               0
+            time_to_live                        dyn_random
+            {
+                min                             0.1
+                max                             0.2
+            }
+            velocity                            1
+            particle_width                      50
+            particle_height                     100
+			position                            0 0 80
+            direction                           0 0 1
+            end_texture_coords_range            3
+        }
+        affector                                Scale 
+        {
+            x_scale                             -100
+            y_scale                             2000
+        }
+        affector                                Colour 
+        {
+            time_colour                         0    1 1 1 0
+            time_colour                         0.2  1 1 1 0
+            time_colour                         0.8  1 1 1 0.5
+            time_colour                         1    1 1 1 0
+            colour_operation                    multiply
+        }
+    }
+    technique 
+    {
+        visual_particle_quota                   20
+        material                                mp_weapon_rocket_02_1x4
+        renderer                                Billboard
+        {
+            texture_coords_columns              4
+            billboard_type                      oriented_self
+            billboard_origin                    bottom_center
+            billboard_rotation_type             vertex
+        }
+        emitter                                 Point 
+        {
+            emission_rate                       200
+            angle                               0
+            time_to_live                        dyn_random
+            {
+                min                             0.1
+                max                             0.2
+            }
+            velocity                            1
+            particle_width                      50
+            particle_height                     50
+			position                            0 0 80
+            direction                           0 0 1
+            end_texture_coords_range            3
+        }
+        affector                                Scale 
+        {
+            x_scale                             -200
+            y_scale                             2000
+        }
+        affector                                Colour 
+        {
+            time_colour                         0    0 0 0 1
+            time_colour                         0.2  0 0 0 1
+            time_colour                         0.8  0.3 0.3 0.3 1
+            time_colour                         1    0 0 0 1
+            colour_operation                    multiply
+        }
+    }
+    technique 
+    {
+        visual_particle_quota                   40
+        material                                mp_weapon_rocketboost
+        renderer                                Billboard
+        {
+            texture_coords_rows                 0
+            texture_coords_columns              0
+            billboard_type                      oriented_self
+            billboard_origin                    bottom_center
+            billboard_rotation_type             vertex
+        }
+        emitter                                 Point 
+        {
+            emission_rate                       300
+            angle                               0
+            time_to_live                        dyn_random
+            {
+                min                             0.1
+                max                             0.2
+            }
+            velocity                            1
+            particle_width                      dyn_random
+            {
+                min                             5
+                max                             25
+            }
+            particle_height                     dyn_random
+            {
+                min                             25
+                max                             75
+            }
+			position                            0 0 80
+            direction                           0 0 1
+        }
+        affector                                Scale 
+        {
+            x_scale                             -200
+            y_scale                             1000
+        }
+        affector                                Colour 
+        {
+            time_colour                         0    1 1 1 1
+            time_colour                         0.8  1 1 1 1
+            time_colour                         1    0 0 0 1
+            colour_operation                    multiply
+        }
+    }
+    technique 
+    {
+        visual_particle_quota                   5
+        material                                mp_weapon_rocketflare
+        default_particle_width                  300
+        default_particle_height                 300
+        renderer                                Billboard
+        {
+            billboard_rotation_type             vertex
+        }
+        emitter                                 Point 
+        {
+            emission_rate                       dyn_curved_linear
+            {
+                control_point                   0 50
+                control_point                   0.1 2
+            }
+            time_to_live                        dyn_random
+            {
+                min                             1
+                max                             2
+            }
+			position                            0 0 80
+            velocity                            0.0001
+        }
+        affector                                Colour 
+        {
+            time_colour                         0    0 0 0 1
+            time_colour                         0.5  1 1 1 1
+            time_colour                         1    0 0 0 1
+            colour_operation                    multiply
+        }
+    }
+}
+
+system Shield
+{
+    keep_local                                  true
+    scale_velocity                              0.35
+    scale                                       0.35 0.35 0.35
+    technique 
+    {
+        visual_particle_quota                   100
+        material                                mp_flare_elipses
+        default_particle_width                  100
+        default_particle_height                 100
+        default_particle_depth                  100
+        renderer                                Sphere
+        {
+        }
+        emitter                                 Point 
+        {
+            emission_rate                       100
+            angle                               0
+            time_to_live                        dyn_random
+            {
+                min                             0.1
+                max                             0.2
+            }
+            velocity                            0.0001
+            colour                              0 0.501961 1 1
+        }
+        affector                                Colour 
+        {
+            time_colour                         0    1 1 1 1
+            time_colour                         1    0 0 0 1
+            colour_operation                    multiply
+        }
+        affector                                GeometryRotator 
+        {
+            rotation_speed                      0
+        }
+    }
+    technique 
+    {
+        material                                mp_flare_06
+        renderer                                Billboard
+        {
+            billboard_type                      oriented_self
+            billboard_origin                    top_center
+            billboard_rotation_type             vertex
+        }
+        emitter                                 Point 
+        {
+            angle                               360
+            time_to_live                        dyn_random
+            {
+                min                             1
+                max                             2
+            }
+            velocity                            0.0001
+            particle_width                      dyn_random
+            {
+                min                             5
+                max                             10
+            }
+            particle_height                     dyn_random
+            {
+                min                             80
+                max                             120
+            }
+            colour                              0 0.501961 1 1
+        }
+        affector                                Colour 
+        {
+            time_colour                         0    0 0 0 1
+            time_colour                         0.5  1 1 1 1
+            time_colour                         1    0 0 0 1
+            colour_operation                    multiply
+        }
+    }
+}
+
+system Berserker
+{
+    scale_velocity                              0.006
+    scale                                       0.06 0.06 0.06
+    technique 
+    {
+        keep_local                              true
+        visual_particle_quota                   2500
+        material                                PUMediaPack/Flare_04
+        default_particle_width                  300
+        default_particle_height                 300
+        renderer                                Billboard
+        {
+        }
+        emitter                                 SphereSurface 
+        {
+            emission_rate                       200
+            radius                              400
+        }
+        affector                                Colour 
+        {
+            time_colour                         0    0 0 0.2 1
+            time_colour                         0.9  0.8 0.8 1 1
+            time_colour                         1    1 1 1 1
+        }
+        affector                                Gravity 
+        {
+            gravity                             900000
+        }
+        affector                                Scale 
+        {
+            xyz_scale                           -150
+        }
+    }
+    technique 
+    {
+        keep_local                              true
+        visual_particle_quota                   250
+        material                                PUMediaPack/Streak_03
+        renderer                                Billboard
+        {
+            billboard_type                      oriented_self
+        }
+        emitter                                 Point 
+        {
+            emission_rate                       30
+            angle                               360
+            time_to_live                        4
+            velocity                            1
+            particle_width                      dyn_random
+            {
+                min                             40
+                max                             80
+            }
+            particle_height                     dyn_random
+            {
+                min                             1500
+                max                             2000
+            }
+            colour                              1 1 0 1
+        }
+        affector                                Scale 
+        {
+            x_scale                             -40
+        }
+        affector                                Scale 
+        {
+            y_scale                             -1500
+        }
+        affector                                Colour 
+        {
+            time_colour                         0    0 0 0 0
+            time_colour                         0.2  1 1 1 1
+            time_colour                         0.8  1 1 1 1
+            time_colour                         1    0 0 0 0
+            colour_operation                    multiply
+        }
+    }
+}
+
+system AutoHeal
+{
+    keep_local                                  true
+    scale_velocity                              0.30
+    scale                                       0.30 0.30 0.30
+    technique 
+    {
+        keep_local                              true
+        visual_particle_quota                   10
+        emitted_emitter_quota                   200
+        material                                mp_flare_05
+        spatial_hashing_update_interval         0
+        renderer                                Billboard
+        {
+        }
+        emitter                                 SphereSurface 
+        {
+            emission_rate                       50
+            angle                               360
+            time_to_live                        dyn_random
+            {
+                min                             0.3
+                max                             1
+            }
+            velocity                            dyn_random
+            {
+                min                             2
+                max                             5
+            }
+            duration                            100
+            all_particle_dimensions             dyn_random
+            {
+                min                             20
+                max                             100
+            }
+            particle_width                      100
+            particle_height                     100
+            keep_local                          true
+            colour                              0 1 0 1
+            radius                              50
+        }
+        affector                                Colour 
+        {
+            time_colour                         0    0 0 0 1
+            time_colour                         0.1  0.5 0.5 0.5 1
+            time_colour                         0.6  0.5 0.5 0.5 1
+            time_colour                         1    0 0 0 1
+            colour_operation                    multiply
+        }
+        affector                                Scale 
+        {
+            xyz_scale                           dyn_curved_linear
+            {
+                control_point                   0 300
+                control_point                   0.2 10
+                control_point                   1 0
+            }
+        }
+        observer                                OnTime 
+        {
+            observe_until_event                 true
+            handler                             DoStopSystem 
+            {
+            }
+            since_start_system                  true
+            on_time                             greater_than 100
+        }
+    }
+}
+
+system Turbo
+{
+    keep_local                                  true
+    scale                                       0.250 0.250 0.250
+    technique 
+    {
+        visual_particle_quota                   30
+        material                                mp_weapon_rocket_01_1x4
+        renderer                                Billboard
+        {
+            texture_coords_columns              4
+            billboard_type                      oriented_self
+            billboard_origin                    bottom_center
+            billboard_rotation_type             vertex
+        }
+        emitter                                 Point 
+        {
+            emission_rate                       300
+            angle                               0
+            time_to_live                        dyn_random
+            {
+                min                             0.1
+                max                             0.2
+            }
+            velocity                            1
+            particle_width                      50
+            particle_height                     100
+            position                            0 0 40
+            direction                           0 0 1
+            end_texture_coords_range            3
+            colour                              1 0 0 1
+        }
+        affector                                Scale 
+        {
+            x_scale                             -100
+            y_scale                             2000
+        }
+        affector                                Colour 
+        {
+            time_colour                         0    1 1 1 0
+            time_colour                         0.2  1 1 1 0
+            time_colour                         0.8  1 1 1 0.5
+            time_colour                         1    1 1 1 0
+            colour_operation                    multiply
+        }
+    }
+    technique 
+    {
+        visual_particle_quota                   20
+        material                                mp_weapon_rocket_02_1x4
+        renderer                                Billboard
+        {
+            texture_coords_columns              4
+            billboard_type                      oriented_self
+            billboard_origin                    bottom_center
+            billboard_rotation_type             vertex
+        }
+        emitter                                 Point 
+        {
+            emission_rate                       200
+            angle                               0
+            time_to_live                        dyn_random
+            {
+                min                             0.1
+                max                             0.2
+            }
+            velocity                            1
+            particle_width                      50
+            particle_height                     50
+            position                            0 0 40
+            direction                           0 0 1
+            end_texture_coords_range            3
+            colour                              1 0 0 1
+        }
+        affector                                Scale 
+        {
+            x_scale                             -200
+            y_scale                             2000
+        }
+        affector                                Colour 
+        {
+            time_colour                         0    0 0 0 1
+            time_colour                         0.2  0 0 0 1
+            time_colour                         0.8  0.3 0.3 0.3 1
+            time_colour                         1    0 0 0 1
+            colour_operation                    multiply
+        }
+    }
+    technique 
+    {
+        keep_local                              true
+        visual_particle_quota                   40
+        material                                mp_weapon_rocketboost
+        renderer                                Billboard
+        {
+            texture_coords_rows                 0
+            texture_coords_columns              0
+            billboard_type                      oriented_self
+            billboard_origin                    bottom_center
+            billboard_rotation_type             vertex
+        }
+        emitter                                 Point 
+        {
+            emission_rate                       300
+            angle                               0
+            time_to_live                        dyn_random
+            {
+                min                             0.1
+                max                             0.2
+            }
+            velocity                            1
+            particle_width                      dyn_random
+            {
+                min                             5
+                max                             25
+            }
+            particle_height                     dyn_random
+            {
+                min                             25
+                max                             75
+            }
+            position                            0 0 40
+            direction                           0 0 1
+            colour                              1 0 0 1
+        }
+        affector                                Scale 
+        {
+            x_scale                             -200
+            y_scale                             1000
+        }
+        affector                                Colour 
+        {
+            time_colour                         0    1 1 1 1
+            time_colour                         0.8  1 1 1 1
+            time_colour                         1    0 0 0 1
+            colour_operation                    multiply
+        }
+    }
+}
+
+system BulletBoss1
+{
+    keep_local                                  true
+	
+	scale_velocity                              0.28
+    scale                                       0.28 0.28 0.28
+	
+    technique 
+    {
+        material                                mp_flare_02
+        renderer                                Billboard
+        {
+            render_queue_group                  51
+            billboard_rotation_type             vertex
+        }
+        emitter                                 Point 
+        {
+            emission_rate                       5
+            time_to_live                        100
+            velocity                            0
+            all_particle_dimensions             dyn_random
+            {
+                min                             90
+                max                             200
+            }
+            colour                              0.992157 0.639216 0.376471 1
+            force_emission                      true
+        }
+        affector                                TextureRotator 
+        {
+            use_own_rotation                    true
+            rotation                            dyn_random
+            {
+                min                             -4
+                max                             4
+            }
+            rotation_speed                      dyn_random
+            {
+                min                             -3
+                max                             3
+            }
+        }
+    }
+    technique 
+    {
+        visual_particle_quota                   8
+        material                                mp_flare_ring
+        default_particle_width                  200
+        default_particle_height                 200
+        renderer                                Billboard
+        {
+            billboard_rotation_type             vertex
+        }
+        emitter                                 Point 
+        {
+            emission_rate                       7
+            time_to_live                        100
+            velocity                            0
+            all_particle_dimensions             dyn_random
+            {
+                min                             50
+                max                             150
+            }
+            colour                              0.980392 1 0.733333 1
+            force_emission                      true
+        }
+        affector                                TextureRotator 
+        {
+            use_own_rotation                    true
+            rotation                            dyn_random
+            {
+                min                             -3
+                max                             3
+            }
+            rotation_speed                      dyn_random
+            {
+                min                             -3
+                max                             3
+            }
+        }
+    }
+}

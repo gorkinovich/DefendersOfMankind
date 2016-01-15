@@ -1,0 +1,120 @@
+material Terreno-SubCapa1
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Jungle0.png
+				transform 10 0 0 0 0 200 0 0 0 0 1 0 0 0 0 1
+			}
+			texture_unit
+			{
+				texture Blender.png
+				colour_op alpha_blend
+			}
+			texture_unit
+			{
+				texture Volcano6.png
+				transform 10 0 0 0 0 200 0 0 0 0 1 0 0 0 0 1
+				colour_op_ex blend_current_alpha src_texture src_current
+			}
+		}
+		pass
+		{
+			scene_blend modulate
+			texture_unit
+			{
+				texture TerrenoShadowsMap.png
+				colour_op modulate
+			}
+		}
+	}
+}
+
+material Terreno-SubCapa2
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Jungle0.png
+				transform 10 0 0 0 0 200 0 0 0 0 1 0 0 0 0 1
+			}
+			texture_unit
+			{
+				texture Blender2.png
+				colour_op alpha_blend
+			}
+			texture_unit
+			{
+				texture City1.png
+				transform 10 0 0 0 0 200 0 0 0 0 1 0 0 0 0 1
+				colour_op_ex blend_current_alpha src_texture src_current
+			}
+		}
+		pass
+		{
+			scene_blend modulate
+			texture_unit
+			{
+				texture TerrenoShadowsMap.png
+				colour_op modulate
+			}
+		}
+	}
+}
+
+material Terreno-SubCapa3
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture City1.png
+				transform 100 0 0 0 0 2000 0 0 0 0 1 0 0 0 0 1
+			}
+			texture_unit
+			{
+				texture Blender3.png
+				colour_op alpha_blend
+			}
+			texture_unit
+			{
+				texture Desert0.png
+				transform 10 0 0 0 0 200 0 0 0 0 1 0 0 0 0 1
+				colour_op_ex blend_current_alpha src_texture src_current
+			}
+		}
+		pass
+		{
+			scene_blend modulate
+			texture_unit
+			{
+				texture TerrenoShadowsMap.png
+				colour_op modulate
+			}
+		}
+	}
+}
+
+material Asphalt
+{
+	technique
+	{
+		pass
+		{
+			scene_blend one one_minus_src_alpha
+			texture_unit
+			{
+				texture Asphalt.png
+				transform 10 0 0 0 0 200 0 0 0 0 1 0 0 0 0 1
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="Cutscene">
+    <Property Name="Text" Value="Cutscene" />
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+
+    <!-- TODO: Completar el fichero... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                               ...                               -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: XXX de prueba... -->
+    <Window Type="MankindDefenders/StaticImage" Name="Cutscene/Avatar" >
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="FrameEnabled" Value="True" />
+      <Property Name="BackgroundEnabled" Value="True" />
+      <Property Name="HorzFormatting" Value="CentreAligned" />
+      <Property Name="VertFormatting" Value="CentreAligned" />
+      <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.5,0},{0.5,0}}" />
+      <Property Name="Image" Value="set:Logo image:Logo" />
+    </Window>
+
+    <Window Type="MankindDefenders/StaticText" Name="Cutscene/Message" >
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="DejaVuSans-10" />
+      <Property Name="FrameEnabled" Value="True" />
+      <Property Name="BackgroundEnabled" Value="True" />
+      <Property Name="HorzFormatting" Value="LeftAligned" />
+      <Property Name="VertFormatting" Value="TopAligned" />
+      <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.6,0},{0.9,0},{0.9,0}}" />
+      <Property Name="Text" Value="Bla, bla, bla...&#10;Bla, bla, bla..." />
+    </Window>
+    <!-- FIN: XXX de prueba... -->
+  </Window>
+</GUILayout>

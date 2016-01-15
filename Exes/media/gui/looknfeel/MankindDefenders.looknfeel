@@ -1,0 +1,4810 @@
+<?xml version="1.0" ?>
+<Falagard>
+  <!-- TODO: Completar el fichero... -->
+
+  <!-- ******************************************************************************** -->
+  <!--                                     General                                      -->
+  <!-- ******************************************************************************** -->
+
+  <WidgetLook name="MankindDefenders/MenuBackground">
+    <PropertyDefinition name="ImageColours" initialValue="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" redrawOnWrite="true" />
+    <PropertyDefinition name="VertFormatting" initialValue="Stretched" redrawOnWrite="true" />
+    <PropertyDefinition name="HorzFormatting" initialValue="Stretched" redrawOnWrite="true" />
+    <PropertyDefinition name="ImageWidth" initialValue="1920" redrawOnWrite="true" />
+    <PropertyDefinition name="ImageHeight" initialValue="1080" redrawOnWrite="true" />
+    <Property name="BackgroundEnabled" value="False" />
+    <Property name="FrameEnabled" value="False" />
+    <Property name="AlwaysOnTop" value="False" />
+    <ImagerySection name="main">
+      <ImageryComponent>
+        <Area>
+          <Dim type="TopEdge">
+            <UnifiedDim scale="0" type="TopEdge" />
+          </Dim>
+          <Dim type="Height">
+            <WidgetDim dimension="Height" />
+          </Dim>
+          <Dim type="LeftEdge">
+            <UnifiedDim scale="0" type="LeftEdge" />
+          </Dim>
+          <Dim type="Width">
+            <WidgetDim dimension="Width" />
+          </Dim>
+        </Area>
+        <ImageProperty name="Image" />
+        <ColourRectProperty name="ImageColours" />
+        <VertFormatProperty name="VertFormatting" />
+        <HorzFormatProperty name="HorzFormatting" />
+      </ImageryComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="EnabledFrame">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledFrame">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="WithFrameEnabledBackground">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="WithFrameDisabledBackground">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="NoFrameEnabledBackground">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="NoFrameDisabledBackground">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="WithFrameImage">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="NoFrameImage">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/Sprite">
+    <PropertyDefinition name="ImageColours" initialValue="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" redrawOnWrite="true" />
+    <PropertyDefinition name="VertFormatting" initialValue="Stretched" redrawOnWrite="true" />
+    <PropertyDefinition name="HorzFormatting" initialValue="Stretched" redrawOnWrite="true" />
+    <Property name="BackgroundEnabled" value="False" />
+    <Property name="FrameEnabled" value="False" />
+    <ImagerySection name="main">
+      <ImageryComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <ImageProperty name="Image" />
+        <ColourRectProperty name="ImageColours" />
+        <VertFormatProperty name="VertFormatting" />
+        <HorzFormatProperty name="HorzFormatting" />
+      </ImageryComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="EnabledFrame">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledFrame">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="WithFrameEnabledBackground">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="WithFrameDisabledBackground">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="NoFrameEnabledBackground">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="NoFrameDisabledBackground">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="WithFrameImage">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="NoFrameImage">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/StaticShared">
+    <ImagerySection name="frame">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="TextBoxTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="TextBoxTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="TextBoxBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="TextBoxBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="TextBoxL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="TextBoxT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="TextBoxR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="TextBoxB" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="with_frame_background">
+      <ImageryComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <ImageDim imageset="MankindDefenders" image="TextBoxL" dimension="Width" />
+          </Dim>
+          <Dim type="TopEdge">
+            <ImageDim imageset="MankindDefenders" image="TextBoxT" dimension="Height" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1.0" type="RightEdge">
+              <DimOperator op="Subtract">
+                <ImageDim imageset="MankindDefenders" image="TextBoxR" dimension="Width" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1.0" type="BottomEdge">
+              <DimOperator op="Subtract">
+                <ImageDim imageset="MankindDefenders" image="TextBoxB" dimension="Height" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+        </Area>
+        <Image imageset="MankindDefenders" image="TextBoxM" />
+        <VertFormat type="Stretched" />
+        <HorzFormat type="Stretched" />
+      </ImageryComponent>
+    </ImagerySection>
+    <ImagerySection name="no_frame_background">
+      <ImageryComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <Image imageset="MankindDefenders" image="TextBoxM" />
+        <VertFormat type="Stretched" />
+        <HorzFormat type="Stretched" />
+      </ImageryComponent>
+    </ImagerySection>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/StaticImage">
+    <PropertyDefinition name="ImageColours" initialValue="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" redrawOnWrite="true" />
+    <PropertyDefinition name="VertFormatting" initialValue="Stretched" redrawOnWrite="true" />
+    <PropertyDefinition name="HorzFormatting" initialValue="Stretched" redrawOnWrite="true" />
+    <Property name="BackgroundEnabled" value="True" />
+    <Property name="FrameEnabled" value="False" />
+    <ImagerySection name="image_withframe">
+      <ImageryComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <ImageDim imageset="MankindDefenders" image="TextBoxL" dimension="Width" />
+          </Dim>
+          <Dim type="TopEdge">
+            <ImageDim imageset="MankindDefenders" image="TextBoxT" dimension="Height" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1.0" type="RightEdge">
+              <DimOperator op="Subtract">
+                <ImageDim imageset="MankindDefenders" image="TextBoxR" dimension="Width" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1.0" type="BottomEdge">
+              <DimOperator op="Subtract">
+                <ImageDim imageset="MankindDefenders" image="TextBoxB" dimension="Height" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+        </Area>
+        <ImageProperty name="Image" />
+        <ColourRectProperty name="ImageColours" />
+        <VertFormatProperty name="VertFormatting" />
+        <HorzFormatProperty name="HorzFormatting" />
+      </ImageryComponent>
+    </ImagerySection>
+    <ImagerySection name="image_noframe">
+      <ImageryComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1.0" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1.0" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <ImageProperty name="Image" />
+        <ColourRectProperty name="ImageColours" />
+        <VertFormatProperty name="VertFormatting" />
+        <HorzFormatProperty name="HorzFormatting" />
+      </ImageryComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled" />
+    <StateImagery name="Disabled" />
+    <StateImagery name="EnabledFrame">
+      <Layer>
+        <Section look="MankindDefenders/StaticShared" section="frame" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledFrame">
+      <Layer>
+        <Section look="MankindDefenders/StaticShared" section="frame" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="WithFrameEnabledBackground">
+      <Layer>
+        <Section look="MankindDefenders/StaticShared" section="with_frame_background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="WithFrameDisabledBackground">
+      <Layer>
+        <Section look="MankindDefenders/StaticShared" section="with_frame_background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="NoFrameEnabledBackground">
+      <Layer>
+        <Section look="MankindDefenders/StaticShared" section="noframe_background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="NoFrameDisabledBackground">
+      <Layer>
+        <Section look="MankindDefenders/StaticShared" section="noframe_background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="WithFrameImage">
+      <Layer>
+        <Section section="image_withframe" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="NoFrameImage">
+      <Layer>
+        <Section section="image_noframe" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/StaticText">
+    <Property name="BackgroundEnabled" value="True" />
+    <Property name="FrameEnabled" value="True" />
+    <Property name="TextColours" value="tl:FF000000 tr:FF000000 bl:FF000000 br:FF000000" />
+    <Property name="HorzFormatting" value="WordWrapLeftAligned" />
+    <NamedArea name="WithFrameTextRenderArea">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="TextBoxL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="TextBoxT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TextBoxR" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TextBoxB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="WithFrameTextRenderAreaHScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="TextBoxL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="TextBoxT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TextBoxR" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TextBoxB" dimension="Height">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Height" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="WithFrameTextRenderAreaVScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="TextBoxL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="TextBoxT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TextBoxR" dimension="Width">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TextBoxB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="WithFrameTextRenderAreaHVScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="TextBoxL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="TextBoxT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TextBoxR" dimension="Width">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TextBoxB" dimension="Height">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Height" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="NoFrameTextRenderArea">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge" />
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="NoFrameTextRenderAreaHScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge" />
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TextBoxB" dimension="Height">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Height" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="NoFrameTextRenderAreaVScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TextBoxR" dimension="Width">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="NoFrameTextRenderAreaHVScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TextBoxR" dimension="Width">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TextBoxB" dimension="Height">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Height" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <Child type="MankindDefenders/HorizontalScrollbar" nameSuffix="__auto_hscrollbar__">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="TextBoxL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TextBoxB" dimension="Height" />
+            </DimOperator>
+          </AbsoluteDim>
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" type="Width">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TextBoxR" dimension="Width">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="Height">
+          <ImageDim imageset="MankindDefenders" image="Handle" dimension="Height" />
+        </Dim>
+      </Area>
+      <VertAlignment type="BottomAligned" />
+      <Property name="NonClient" value="True" />
+    </Child>
+    <Child type="MankindDefenders/VerticalScrollbar" nameSuffix="__auto_vscrollbar__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TextBoxR" dimension="Width" />
+            </DimOperator>
+          </AbsoluteDim>
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="TextBoxT" dimension="Height" />
+        </Dim>
+        <Dim type="Width">
+          <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TextBoxB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+      <HorzAlignment type="RightAligned" />
+      <Property name="NonClient" value="True" />
+    </Child>
+    <StateImagery name="Enabled" />
+    <StateImagery name="Disabled" />
+    <StateImagery name="EnabledFrame">
+      <Layer>
+        <Section look="MankindDefenders/StaticShared" section="frame" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledFrame">
+      <Layer>
+        <Section look="MankindDefenders/StaticShared" section="frame" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="WithFrameEnabledBackground">
+      <Layer>
+        <Section look="MankindDefenders/StaticShared" section="with_frame_background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="WithFrameDisabledBackground">
+      <Layer>
+        <Section look="MankindDefenders/StaticShared" section="with_frame_background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="NoFrameEnabledBackground">
+      <Layer>
+        <Section look="MankindDefenders/StaticShared" section="no_frame_background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="NoFrameDisabledBackground">
+      <Layer>
+        <Section look="MankindDefenders/StaticShared" section="no_frame_background" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- ******************************************************************************** -->
+  <!--                                   Contenedores                                   -->
+  <!-- ******************************************************************************** -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/DialogWindow">
+    <PropertyLinkDefinition name="CaptionColour" widget="__auto_titlebar__" targetProperty="CaptionColour" initialValue="FFe5ffb2" />
+    <PropertyLinkDefinition name="CaptionFont" widget="__auto_titlebar__" targetProperty="Font" />
+    <Property name="NSSizingCursorImage" value="set:OgreTrayImages image:MouseArrow" />
+    <Property name="EWSizingCursorImage" value="set:OgreTrayImages image:MouseArrow" />
+    <Property name="NWSESizingCursorImage" value="set:OgreTrayImages image:MouseArrow" />
+    <Property name="NESWSizingCursorImage" value="set:OgreTrayImages image:MouseArrow" />
+    <Property name="AutoRenderingSurface" value="True" />
+    <NamedArea name="ClientWithTitleWithFrame">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="TrayL" dimension="Width">
+            <DimOperator op="Divide">
+              <AbsoluteDim value="2" />
+            </DimOperator>
+          </ImageDim>
+        </Dim>
+        <Dim type="TopEdge">
+          <WidgetDim widget="__auto_titlebar__" dimension="BottomEdge">
+            <DimOperator op="Add">
+              <ImageDim imageset="MankindDefenders" image="TrayT" dimension="Height">
+                <DimOperator op="Divide">
+                  <AbsoluteDim value="2" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </WidgetDim>
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TrayR" dimension="Width">
+                <DimOperator op="Divide">
+                  <AbsoluteDim value="2" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TrayB" dimension="Height">
+                <DimOperator op="Divide">
+                  <AbsoluteDim value="2" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="ClientWithTitleNoFrame">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <WidgetDim widget="__auto_titlebar__" dimension="BottomEdge" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1" type="Width" />
+        </Dim>
+        <Dim type="BottomEdge">
+          <WidgetDim dimension="BottomEdge" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="ClientNoTitleWithFrame">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="TrayL" dimension="Width">
+            <DimOperator op="Divide">
+              <AbsoluteDim value="2" />
+            </DimOperator>
+          </ImageDim>
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="TrayT" dimension="Height">
+            <DimOperator op="Divide">
+              <AbsoluteDim value="2" />
+            </DimOperator>
+          </ImageDim>
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TrayR" dimension="Width">
+                <DimOperator op="Divide">
+                  <AbsoluteDim value="2" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TrayB" dimension="Height">
+                <DimOperator op="Divide">
+                  <AbsoluteDim value="2" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="ClientNoTitleNoFrame">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1" type="Width" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="1" type="Height" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <Child type="MankindDefenders/DialogTitlebar" nameSuffix="__auto_titlebar__">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="TrayL" dimension="Width">
+            <DimOperator op="Divide">
+              <AbsoluteDim value="2" />
+            </DimOperator>
+          </ImageDim>
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="TrayT" dimension="Height">
+            <DimOperator op="Divide">
+              <AbsoluteDim value="2" />
+            </DimOperator>
+          </ImageDim>
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1" type="Width">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TrayL" dimension="Width"/>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="Height">
+          <FontDim type="LineSpacing" padding="8" />
+        </Dim>
+      </Area>
+      <Property name="AlwaysOnTop" value="False" />
+    </Child>
+    <!-- here we basically nullify the close button, for now at least -->
+    <Child type="DefaultWindow" nameSuffix="__auto_closebutton__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="0" type="Width" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="0" type="Height" />
+        </Dim>
+      </Area>
+      <Property name="NonClient" value="True" />
+    </Child>
+    <ImagerySection name="frame">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="TrayTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="TrayTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="TrayBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="TrayBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="TrayL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="TrayT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="TrayR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="TrayB" />
+        <Image type="Background" imageset="MankindDefenders" image="TrayM" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="noframe">
+      <ImageryComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <Image imageset="MankindDefenders" image="TrayM" />
+        <VertFormat type="Stretched" />
+        <HorzFormat type="Stretched" />
+      </ImageryComponent>
+    </ImagerySection>
+    <StateImagery name="ActiveWithTitleWithFrame">
+      <Layer>
+        <Section section="frame" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="InactiveWithTitleWithFrame">
+      <Layer>
+        <Section section="frame" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledWithTitleWithFrame">
+      <Layer>
+        <Section section="frame" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="ActiveWithTitleNoFrame">
+      <Layer>
+        <Section section="noframe" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="InactiveWithTitleNoFrame">
+      <Layer>
+        <Section section="noframe" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledWithTitleNoFrame">
+      <Layer>
+        <Section section="noframe" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="ActiveNoTitleWithFrame">
+      <Layer>
+        <Section section="frame" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="InactiveNoTitleWithFrame">
+      <Layer>
+        <Section section="frame" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledNoTitleWithFrame">
+      <Layer>
+        <Section section="frame" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="ActiveNoTitleNoFrame">
+      <Layer>
+        <Section section="noframe" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="InactiveNoTitleNoFrame">
+      <Layer>
+        <Section section="noframe" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledNoTitleNoFrame">
+      <Layer>
+        <Section section="noframe" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/TabControl">
+    <Property name="TabButtonType" value="MankindDefenders/TabButton" />
+    <Property name="TabTextPadding" value="{0,6}" />
+    <Child type="MankindDefenders/TabContentPanel" nameSuffix="__auto_TabPane__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" type="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <PropertyDim widget="__auto_TabPane__" name="EnableBottom">
+            <DimOperator op="Multiply">
+              <PropertyDim name="TabHeight" type="Height" />
+            </DimOperator>
+          </PropertyDim>
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="1" type="Height">
+            <DimOperator op="Subtract">
+              <PropertyDim name="TabHeight" type="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="MankindDefenders/TabButtonPanel" nameSuffix="__auto_TabPane__Buttons">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" type="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <PropertyDim widget="__auto_TabPane__Buttons" name="EnableTop">
+            <DimOperator op="Multiply">
+              <UnifiedDim scale="1" type="Height">
+                <DimOperator op="Subtract">
+                  <PropertyDim name="TabHeight" type="Height" />
+                </DimOperator>
+              </UnifiedDim>
+            </DimOperator>
+          </PropertyDim>
+        </Dim>
+        <Dim type="Height">
+          <PropertyDim name="TabHeight" type="Height" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="MankindDefenders/Button" nameSuffix="__auto_TabPane__ScrollLeft">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <WidgetDim widget="__auto_TabPane__Buttons" dimension="TopEdge" />
+        </Dim>
+        <Dim type="Width">
+          <WidgetDim widget="__auto_TabPane__Buttons" dimension="Height">
+            <DimOperator op="Multiply">
+              <FontDim type="HorzExtent" string="&lt;&lt;">
+                <DimOperator op="Divide">
+                  <FontDim type="LineSpacing" />
+                </DimOperator>
+              </FontDim>
+            </DimOperator>
+          </WidgetDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <WidgetDim widget="__auto_TabPane__Buttons" dimension="BottomEdge" />
+        </Dim>
+      </Area>
+      <Property name="AlwaysOnTop" value="True" />
+      <Property name="Text" value="&lt;&lt;" />
+    </Child>
+    <Child type="MankindDefenders/Button" nameSuffix="__auto_TabPane__ScrollRight">
+      <Area>
+        <Dim type="Width">
+          <WidgetDim widget="__auto_TabPane__Buttons" dimension="Height">
+            <DimOperator op="Multiply">
+              <FontDim type="HorzExtent" string="&gt;&gt;">
+                <DimOperator op="Divide">
+                  <FontDim type="LineSpacing" />
+                </DimOperator>
+              </FontDim>
+            </DimOperator>
+          </WidgetDim>
+        </Dim>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="1" type="Width">
+            <DimOperator op="Subtract">
+              <WidgetDim widget="__auto_TabPane__ScrollRight" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="TopEdge">
+          <WidgetDim widget="__auto_TabPane__Buttons" dimension="TopEdge" />
+        </Dim>
+        <Dim type="Height">
+          <WidgetDim widget="__auto_TabPane__Buttons" dimension="Height" />
+        </Dim>
+      </Area>
+      <Property name="AlwaysOnTop" value="True" />
+      <Property name="Text" value="&gt;&gt;" />
+    </Child>
+    <StateImagery name="Enabled" />
+    <StateImagery name="Disabled" />
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/ScrollablePanel">
+    <NamedArea name="ViewableArea">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="ViewableAreaHScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Height" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="ViewableAreaVScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="ViewableAreaHVScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Height" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <Child type="MankindDefenders/HorizontalScrollbar" nameSuffix="__auto_hscrollbar__">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height" />
+            </DimOperator>
+          </AbsoluteDim>
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" type="Width">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="Height">
+          <ImageDim imageset="MankindDefenders" image="Handle" dimension="Height" />
+        </Dim>
+      </Area>
+      <VertAlignment type="BottomAligned" />
+      <Property name="NonClient" value="True" />
+    </Child>
+    <Child type="MankindDefenders/VerticalScrollbar" nameSuffix="__auto_vscrollbar__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width" />
+            </DimOperator>
+          </AbsoluteDim>
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height" />
+        </Dim>
+        <Dim type="Width">
+          <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+      <HorzAlignment type="RightAligned" />
+      <Property name="NonClient" value="True" />
+    </Child>
+    <StateImagery name="Enabled" />
+    <StateImagery name="Disabled" />
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/Panel">
+    <PropertyDefinition name="TextColour" initialValue="FF000000" redrawOnWrite="true" />
+    <PropertyDefinition name="VertFormatting" initialValue="TopAligned" />
+    <PropertyDefinition name="HorzFormatting" initialValue="CentreAligned" />
+    <NamedArea name="inner_rect">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height">
+            <DimOperator op="Add">
+              <FontDim type="LineSpacing" />
+            </DimOperator>
+          </ImageDim>
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <ImagerySection name="frame">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTrayTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTrayTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTrayBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTrayBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTrayL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTrayT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTrayR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTrayB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTrayM" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="label">
+      <TextComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+          </Dim>
+          <Dim type="TopEdge">
+            <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height">
+              <DimOperator op="Divide">
+                <AbsoluteDim value="2" />
+              </DimOperator>
+            </ImageDim>
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1.0" type="RightEdge">
+              <DimOperator op="Subtract">
+                <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1.0" type="BottomEdge">
+              <DimOperator op="Subtract">
+                <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+        </Area>
+        <VertFormatProperty name="VertFormatting" />
+        <HorzFormatProperty name="HorzFormatting" />
+      </TextComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled">
+      <Layer>
+        <Section section="frame" />
+        <Section section="label">
+          <ColourProperty name="TextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="frame" />
+        <Section section="label">
+          <ColourProperty name="TextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/InvisiblePanel">
+    <PropertyDefinition name="TextColour" initialValue="FF000000" redrawOnWrite="true" />
+    <PropertyDefinition name="VertFormatting" initialValue="TopAligned" />
+    <PropertyDefinition name="HorzFormatting" initialValue="CentreAligned" />
+    <ImagerySection name="frame">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="label">
+      <TextComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <VertFormatProperty name="VertFormatting" />
+        <HorzFormatProperty name="HorzFormatting" />
+      </TextComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled">
+      <Layer>
+        <Section section="frame" />
+        <Section section="label">
+          <ColourProperty name="TextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="frame" />
+        <Section section="label">
+          <ColourProperty name="TextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/RadioGroup">
+    <PropertyDefinition name="TextColour" initialValue="FF000000" redrawOnWrite="true" />
+    <PropertyDefinition name="VertFormatting" initialValue="TopAligned" />
+    <PropertyDefinition name="HorzFormatting" initialValue="CentreAligned" />
+    <NamedArea name="inner_rect">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height">
+            <DimOperator op="Add">
+              <FontDim type="LineSpacing" />
+            </DimOperator>
+          </ImageDim>
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <ImagerySection name="frame">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTrayTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTrayTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTrayBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTrayBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTrayL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTrayT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTrayR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTrayB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTrayM" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="label">
+      <TextComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+          </Dim>
+          <Dim type="TopEdge">
+            <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height">
+              <DimOperator op="Divide">
+                <AbsoluteDim value="2" />
+              </DimOperator>
+            </ImageDim>
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1.0" type="RightEdge">
+              <DimOperator op="Subtract">
+                <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1.0" type="BottomEdge">
+              <DimOperator op="Subtract">
+                <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+        </Area>
+        <VertFormatProperty name="VertFormatting" />
+        <HorzFormatProperty name="HorzFormatting" />
+      </TextComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled">
+      <Layer>
+        <Section section="frame" />
+        <Section section="label">
+          <ColourProperty name="TextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="frame" />
+        <Section section="label">
+          <ColourProperty name="TextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- ******************************************************************************** -->
+  <!--                                      Menús                                       -->
+  <!-- ******************************************************************************** -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/MenuItem">
+    <PropertyDefinition name="TextColour" initialValue="FF000000" redrawOnWrite="true" />
+    <PropertyDefinition name="PushedOffColour" initialValue="FF779977" redrawOnWrite="true" />
+    <Property name="WantsMultiClickEvents" value="False" />
+    <NamedArea name="ContentSize">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <FontDim type="HorzExtent">
+            <DimOperator op="Add">
+              <ImageDim imageset="MankindDefenders" image="MiniTextBoxL" dimension="Width" />
+            </DimOperator>
+          </FontDim>
+        </Dim>
+        <Dim type="Height">
+          <FontDim type="LineSpacing">
+            <DimOperator op="Add">
+              <ImageDim imageset="MankindDefenders" image="MiniTextBoxT" dimension="Height" />
+            </DimOperator>
+          </FontDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="HasPopupContentSize">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <FontDim type="HorzExtent">
+            <DimOperator op="Add">
+              <ImageDim imageset="MankindDefenders" image="MiniTextBoxL" dimension="Width">
+                <DimOperator op="Add">
+                  <FontDim type="HorzExtent" string=" &gt;" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </FontDim>
+        </Dim>
+        <Dim type="Height">
+          <FontDim type="LineSpacing">
+            <DimOperator op="Add">
+              <ImageDim imageset="MankindDefenders" image="MiniTextBoxT" dimension="Height" />
+            </DimOperator>
+          </FontDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <ImagerySection name="label">
+      <TextComponent>
+        <Area>
+          <Dim type="TopEdge">
+            <ImageDim imageset="MankindDefenders" image="MiniTextBoxT" dimension="Height">
+              <DimOperator op="Divide">
+                <AbsoluteDim value="2" />
+              </DimOperator>
+            </ImageDim>
+          </Dim>
+          <Dim type="LeftEdge">
+            <ImageDim imageset="MankindDefenders" image="MiniTextBoxL" dimension="Width">
+              <DimOperator op="Divide">
+                <AbsoluteDim value="2" />
+              </DimOperator>
+            </ImageDim>
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width">
+              <DimOperator op="Subtract">
+                <ImageDim imageset="MankindDefenders" image="MiniTextBoxL" dimension="Width" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height">
+              <DimOperator op="Subtract">
+                <ImageDim imageset="MankindDefenders" image="MiniTextBoxT" dimension="Width" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+        </Area>
+        <ColourProperty name="TextColour" />
+        <VertFormat type="CentreAligned" />
+        <HorzFormat type="LeftAligned" />
+      </TextComponent>
+    </ImagerySection>
+    <ImagerySection name="main">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTextBoxTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTextBoxTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTextBoxBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTextBoxBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTextBoxL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTextBoxT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTextBoxR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTextBoxB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTextBoxM" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="selected">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTextBoxOverTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTextBoxOverTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTextBoxOverBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTextBoxOverBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTextBoxOverL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTextBoxOverT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTextBoxOverR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTextBoxOverB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTextBoxOverM" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="popup_arrow_right">
+      <TextComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width">
+              <DimOperator op="Subtract">
+                <FontDim type="HorzExtent" string=" &gt;" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Text string=" &gt;" />
+        <Colours topLeft="FF000000" topRight="FF000000" bottomLeft="FF000000" bottomRight="FF000000" />
+        <VertFormat type="CentreAligned" />
+        <HorzFormat type="RightAligned" />
+      </TextComponent>
+    </ImagerySection>
+    <ImagerySection name="popup_arrow_left">
+      <TextComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width">
+              <DimOperator op="Subtract">
+                <FontDim type="HorzExtent" string=" &lt;" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Text string=" &lt;" />
+        <Colours topLeft="FF000000" topRight="FF000000" bottomLeft="FF000000" bottomRight="FF000000" />
+        <VertFormat type="CentreAligned" />
+        <HorzFormat type="RightAligned" />
+      </TextComponent>
+    </ImagerySection>
+    <StateImagery name="EnabledNormal">
+      <Layer>
+        <Section section="main" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="EnabledHover">
+      <Layer>
+        <Section section="selected" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="EnabledPushed">
+      <Layer>
+        <Section section="main" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="EnabledPushedOff">
+      <Layer>
+        <Section section="selected">
+          <ColourProperty name="PushedOffColour" />
+        </Section>
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="EnabledPopupOpen">
+      <Layer>
+        <Section section="selected" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledNormal">
+      <Layer>
+        <Section section="main" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledHover">
+      <Layer>
+        <Section section="main" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledPushed">
+      <Layer>
+        <Section section="main" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledPushedOff">
+      <Layer>
+        <Section section="main" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledPopupOpen">
+      <Layer>
+        <Section section="main" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="PopupClosedIcon">
+      <Layer>
+        <Section section="popup_arrow_right" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="PopupOpenIcon">
+      <Layer>
+        <Section section="popup_arrow_left" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/Menubar">
+    <PropertyDefinition name="BackgroundColours" initialValue="tl:FFDFEFF5 tr:FFDFDFF5 bl:FFF4F3F5 br:FFF4F3F5" redrawOnWrite="true" />
+    <PropertyDefinition name="BorderWidth" initialValue="5" layoutOnWrite="true" />
+    <NamedArea name="ItemRenderArea">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width">
+            <DimOperator op="Divide">
+              <AbsoluteDim value="2" />
+            </DimOperator>
+          </ImageDim>
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height">
+            <DimOperator op="Divide">
+              <AbsoluteDim value="2" />
+            </DimOperator>
+          </ImageDim>
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1" type="Width">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="1" type="Height">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <ImagerySection name="frame">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTrayTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTrayTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTrayBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTrayBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTrayL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTrayT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTrayR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTrayB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTrayM" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled">
+      <Layer>
+        <Section section="frame" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="frame" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/PopupMenu">
+    <NamedArea name="ItemRenderArea">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" type="Width">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1" type="Height">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <ImagerySection name="frame">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTrayTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTrayTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTrayBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTrayBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTrayL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTrayT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTrayR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTrayB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTrayM" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled">
+      <Layer>
+        <Section section="frame" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="frame" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- ******************************************************************************** -->
+  <!--                                     Botones                                      -->
+  <!-- ******************************************************************************** -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/Button">
+    <PropertyDefinition name="NormalTextColour" initialValue="FF000000" redrawOnWrite="true" />
+    <PropertyDefinition name="HoverTextColour" initialValue="FF000000" redrawOnWrite="true" />
+    <PropertyDefinition name="PushedTextColour" initialValue="FF000000" redrawOnWrite="true" />
+    <PropertyDefinition name="DisabledTextColour" initialValue="FF888888" redrawOnWrite="true" />
+    <ImagerySection name="label">
+      <TextComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <VertFormat type="CentreAligned" />
+        <HorzFormat type="WordWrapCentreAligned" />
+      </TextComponent>
+    </ImagerySection>
+    <ImagerySection name="normal">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="ButtonUpTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="ButtonUpTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="ButtonUpBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="ButtonUpBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="ButtonUpL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="ButtonUpT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="ButtonUpR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="ButtonUpB" />
+        <Image type="Background" imageset="MankindDefenders" image="ButtonUpM" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="hover">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="ButtonOverTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="ButtonOverTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="ButtonOverBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="ButtonOverBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="ButtonOverL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="ButtonOverT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="ButtonOverR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="ButtonOverB" />
+        <Image type="Background" imageset="MankindDefenders" image="ButtonOverM" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="pushed">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="ButtonDownTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="ButtonDownTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="ButtonDownBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="ButtonDownBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="ButtonDownL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="ButtonDownT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="ButtonDownR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="ButtonDownB" />
+        <Image type="Background" imageset="MankindDefenders" image="ButtonDownM" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="Normal">
+      <Layer>
+        <Section section="normal" />
+        <Section section="label">
+          <ColourProperty name="NormalTextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Hover">
+      <Layer>
+        <Section section="hover" />
+        <Section section="label">
+          <ColourProperty name="HoverTextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Pushed">
+      <Layer>
+        <Section section="pushed" />
+        <Section section="label">
+          <ColourProperty name="PushedTextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="PushedOff">
+      <Layer>
+        <Section section="hover" />
+        <Section section="label">
+          <ColourProperty name="HoverTextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="normal" />
+        <Section section="label">
+          <ColourProperty name="DisabledTextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/Thumb">
+    <ImagerySection name="main">
+      <ImageryComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Image imageset="MankindDefenders" image="Handle" />
+        <VertFormat type="Stretched" />
+        <HorzFormat type="Stretched" />
+      </ImageryComponent>
+    </ImagerySection>
+    <StateImagery name="Normal">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Hover">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Pushed">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/Checkbox">
+    <PropertyDefinition name="NormalTextColour" initialValue="FF000000" redrawOnWrite="true" />
+    <PropertyDefinition name="HoverTextColour" initialValue="FF000000" redrawOnWrite="true" />
+    <PropertyDefinition name="PushedTextColour" initialValue="FF000000" redrawOnWrite="true" />
+    <PropertyDefinition name="DisabledTextColour" initialValue="FF000000" redrawOnWrite="true" />
+    <ImagerySection name="label">
+      <TextComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <VertFormat type="CentreAligned" />
+        <HorzFormat type="LeftAligned" />
+      </TextComponent>
+    </ImagerySection>
+    <ImagerySection name="normal">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <UnifiedDim scale="1" type="Width">
+              <DimOperator op="Subtract">
+                <UnifiedDim scale="1" type="Height" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTextBoxTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTextBoxTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTextBoxBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTextBoxBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTextBoxL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTextBoxT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTextBoxR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTextBoxB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTextBoxM" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="hover">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <UnifiedDim scale="1" type="Width">
+              <DimOperator op="Subtract">
+                <UnifiedDim scale="1" type="Height" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTextBoxOverTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTextBoxOverTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTextBoxOverBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTextBoxOverBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTextBoxOverL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTextBoxOverT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTextBoxOverR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTextBoxOverB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTextBoxOverM" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="select_mark">
+      <TextComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <UnifiedDim scale="1" type="Width">
+              <DimOperator op="Subtract">
+                <UnifiedDim scale="1" type="Height" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Text string="X" />
+        <Colours topLeft="FF000000" topRight="FF000000" bottomLeft="FF000000" bottomRight="FF000000" />
+        <VertFormat type="CentreAligned" />
+        <HorzFormat type="CentreAligned" />
+      </TextComponent>
+    </ImagerySection>
+    <StateImagery name="Normal">
+      <Layer>
+        <Section section="normal" />
+        <Section section="label">
+          <ColourProperty name="NormalTextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Hover">
+      <Layer>
+        <Section section="hover" />
+        <Section section="label">
+          <ColourProperty name="HoverTextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="SelectedNormal">
+      <Layer>
+        <Section section="normal" />
+        <Section section="select_mark" />
+        <Section section="label">
+          <ColourProperty name="NormalTextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="SelectedHover">
+      <Layer>
+        <Section section="hover" />
+        <Section section="select_mark" />
+        <Section section="label">
+          <ColourProperty name="HoverTextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/RadioButton">
+    <PropertyDefinition name="NormalTextColour" initialValue="FF000000" redrawOnWrite="true" />
+    <PropertyDefinition name="HoverTextColour" initialValue="FF000000" redrawOnWrite="true" />
+    <PropertyDefinition name="PushedTextColour" initialValue="FF000000" redrawOnWrite="true" />
+    <PropertyDefinition name="DisabledTextColour" initialValue="FF000000" redrawOnWrite="true" />
+    <ImagerySection name="label">
+      <TextComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <VertFormat type="CentreAligned" />
+        <HorzFormat type="LeftAligned" />
+      </TextComponent>
+    </ImagerySection>
+    <ImagerySection name="normal">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <UnifiedDim scale="1" type="Width">
+              <DimOperator op="Subtract">
+                <UnifiedDim scale="1" type="Height" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTextBoxTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTextBoxTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTextBoxBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTextBoxBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTextBoxL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTextBoxT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTextBoxR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTextBoxB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTextBoxM" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="hover">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <UnifiedDim scale="1" type="Width">
+              <DimOperator op="Subtract">
+                <UnifiedDim scale="1" type="Height" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTextBoxOverTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTextBoxOverTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTextBoxOverBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTextBoxOverBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTextBoxOverL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTextBoxOverT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTextBoxOverR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTextBoxOverB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTextBoxOverM" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="select_mark">
+      <TextComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <UnifiedDim scale="1" type="Width">
+              <DimOperator op="Subtract">
+                <UnifiedDim scale="1" type="Height" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Text string="O" />
+        <Colours topLeft="FF000000" topRight="FF000000" bottomLeft="FF000000" bottomRight="FF000000" />
+        <VertFormat type="CentreAligned" />
+        <HorzFormat type="CentreAligned" />
+      </TextComponent>
+    </ImagerySection>
+    <StateImagery name="Normal">
+      <Layer>
+        <Section section="normal" />
+        <Section section="label">
+          <ColourProperty name="NormalTextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Hover">
+      <Layer>
+        <Section section="hover" />
+        <Section section="label">
+          <ColourProperty name="HoverTextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="SelectedNormal">
+      <Layer>
+        <Section section="normal" />
+        <Section section="select_mark" />
+        <Section section="label">
+          <ColourProperty name="NormalTextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="SelectedHover">
+      <Layer>
+        <Section section="hover" />
+        <Section section="select_mark" />
+        <Section section="label">
+          <ColourProperty name="HoverTextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- ******************************************************************************** -->
+  <!--                                 Entrada de texto                                 -->
+  <!-- ******************************************************************************** -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/Spinner">
+    <Child type="MankindDefenders/Button" nameSuffix="__auto_decbtn__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1" type="Height" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="1" type="Height" />
+        </Dim>
+      </Area>
+      <Property name="Text" value="-" />
+    </Child>
+    <Child type="MankindDefenders/Button" nameSuffix="__auto_incbtn__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1" type="Height" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="1" type="Height" />
+        </Dim>
+      </Area>
+      <HorzAlignment type="RightAligned" />
+      <Property name="Text" value="+" />
+    </Child>
+    <Child type="MankindDefenders/Editbox" nameSuffix="__auto_editbox__">
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="1" type="Height" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" type="RightEdge">
+            <DimOperator op="Subtract">
+              <UnifiedDim scale="1" type="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="1" type="Height" />
+        </Dim>
+      </Area>
+    </Child>
+    <StateImagery name="Enabled" />
+    <StateImagery name="Disabled" />
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/Editbox">
+    <PropertyDefinition name="NormalTextColour" initialValue="FF000000" redrawOnWrite="true" />
+    <PropertyDefinition name="SelectedTextColour" initialValue="FF000000" redrawOnWrite="true" />
+    <NamedArea name="TextArea">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="TextBoxL" dimension="Width">
+            <DimOperator op="Multiply">
+              <AbsoluteDim value="0.25" />
+            </DimOperator>
+          </ImageDim>
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="TextBoxT" dimension="Height">
+            <DimOperator op="Multiply">
+              <AbsoluteDim value="0.25" />
+            </DimOperator>
+          </ImageDim>
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" type="Width">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TextBoxR" dimension="Width">
+                <DimOperator op="Multiply">
+                  <AbsoluteDim value="0.25" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1" type="Height">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="TextBoxB" dimension="Height">
+                <DimOperator op="Multiply">
+                  <AbsoluteDim value="0.25" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <ImagerySection name="frame">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTextBoxTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTextBoxTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTextBoxBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTextBoxBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTextBoxL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTextBoxT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTextBoxR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTextBoxB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTextBoxM" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="selection">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTextBoxOverTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTextBoxOverTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTextBoxOverBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTextBoxOverBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTextBoxOverL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTextBoxOverT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTextBoxOverR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTextBoxOverB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTextBoxOverM" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="Carat">
+      <ImageryComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="2" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1.0" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <Image imageset="MankindDefenders" image="GenericBrush" />
+        <Colours topLeft="FF22AA33" topRight="FF22AA33" bottomLeft="FF22AA33" bottomRight="FF22AA33" />
+        <VertFormat type="Stretched" />
+        <HorzFormat type="Stretched" />
+      </ImageryComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled">
+      <Layer>
+        <Section section="frame" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="ReadOnly">
+      <Layer>
+        <Section section="frame" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="frame" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="ActiveSelection">
+      <Layer>
+        <Section section="selection" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="InactiveSelection">
+      <Layer>
+        <Section section="selection" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/MultiLineEditbox">
+    <PropertyDefinition name="ReadOnlyBGColour" initialValue="FFDFDFDF" />
+    <PropertyDefinition name="NormalTextColour" initialValue="FF000000" redrawOnWrite="true" />
+    <PropertyDefinition name="SelectedTextColour" initialValue="FF000000" redrawOnWrite="true" />
+    <PropertyDefinition name="ActiveSelectionColour" initialValue="FFFFFFFF" redrawOnWrite="true" />
+    <PropertyDefinition name="InactiveSelectionColour" initialValue="FFFFFFFF" redrawOnWrite="true" />
+    <Property name="SelectionBrushImage" value="set:OgreTrayImages image:MiniTextBoxOverM" />
+    <NamedArea name="TextArea">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTextBoxL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTextBoxT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTextBoxR" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTextBoxB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="TextAreaHScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTextBoxL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTextBoxT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTextBoxR" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTextBoxB" dimension="Height">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Height" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="TextAreaVScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTextBoxL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTextBoxT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTextBoxR" dimension="Width">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTextBoxB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="TextAreaHVScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTextBoxL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTextBoxT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTextBoxR" dimension="Width">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTextBoxB" dimension="Height">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Height" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <Child type="MankindDefenders/HorizontalScrollbar" nameSuffix="__auto_hscrollbar__">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTextBoxL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTextBoxB" dimension="Height" />
+            </DimOperator>
+          </AbsoluteDim>
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" type="Width">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTextBoxR" dimension="Width">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="Height">
+          <ImageDim imageset="MankindDefenders" image="Handle" dimension="Height" />
+        </Dim>
+      </Area>
+      <VertAlignment type="BottomAligned" />
+      <Property name="NonClient" value="True" />
+    </Child>
+    <Child type="MankindDefenders/VerticalScrollbar" nameSuffix="__auto_vscrollbar__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTextBoxR" dimension="Width" />
+            </DimOperator>
+          </AbsoluteDim>
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTextBoxT" dimension="Height" />
+        </Dim>
+        <Dim type="Width">
+          <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTextBoxB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+      <HorzAlignment type="RightAligned" />
+      <Property name="NonClient" value="True" />
+    </Child>
+    <ImagerySection name="main">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTextBoxTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTextBoxTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTextBoxBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTextBoxBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTextBoxL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTextBoxT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTextBoxR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTextBoxB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTextBoxM" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="Carat">
+      <ImageryComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="2" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1.0" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <Image imageset="MankindDefenders" image="GenericBrush" />
+        <Colours topLeft="FF22AA33" topRight="FF22AA33" bottomLeft="FF22AA33" bottomRight="FF22AA33" />
+        <VertFormat type="Stretched" />
+        <HorzFormat type="Stretched" />
+      </ImageryComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="ReadOnly">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- ******************************************************************************** -->
+  <!--                                 Listas y combos                                  -->
+  <!-- ******************************************************************************** -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/Listbox">
+    <NamedArea name="ItemRenderingArea">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="ItemRenderingAreaHScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Height" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="ItemRenderingAreaVScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="ItemRenderingAreaHVScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Height" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <Child type="MankindDefenders/HorizontalScrollbar" nameSuffix="__auto_hscrollbar__">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height" />
+            </DimOperator>
+          </AbsoluteDim>
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" type="Width">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="Height">
+          <ImageDim imageset="MankindDefenders" image="Handle" dimension="Height" />
+        </Dim>
+      </Area>
+      <VertAlignment type="BottomAligned" />
+      <Property name="NonClient" value="True" />
+    </Child>
+    <Child type="MankindDefenders/VerticalScrollbar" nameSuffix="__auto_vscrollbar__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width" />
+            </DimOperator>
+          </AbsoluteDim>
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height" />
+        </Dim>
+        <Dim type="Width">
+          <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+      <HorzAlignment type="RightAligned" />
+      <Property name="NonClient" value="True" />
+    </Child>
+    <ImagerySection name="main">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTrayTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTrayTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTrayBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTrayBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTrayL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTrayT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTrayR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTrayB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTrayM" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/Combobox">
+    <PropertyLinkDefinition name="NormalEditTextColour" widget="__auto_editbox__" targetProperty="NormalTextColour" initialValue="FF000000" />
+    <PropertyLinkDefinition name="SelectedEditTextColour" widget="__auto_editbox__" targetProperty="SelectedTextColour" initialValue="FF000000" />
+    <Child type="MankindDefenders/Editbox" nameSuffix="__auto_editbox__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" type="RightEdge">
+            <DimOperator op="Subtract">
+              <FontDim type="LineSpacing" padding="10" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="Height">
+          <FontDim type="LineSpacing" padding="10" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="MankindDefenders/ComboDropList" nameSuffix="__auto_droplist__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <WidgetDim widget="__auto_editbox__" dimension="BottomEdge" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1" type="Width" />
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1" type="BottomEdge" />
+        </Dim>
+      </Area>
+      <Property name="ClippedByParent" value="False" />
+    </Child>
+    <Child type="MankindDefenders/Button" nameSuffix="__auto_button__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <WidgetDim widget="__auto_editbox__" dimension="Height" />
+        </Dim>
+        <Dim type="Height">
+          <WidgetDim widget="__auto_editbox__" dimension="Height" />
+        </Dim>
+      </Area>
+      <HorzAlignment type="RightAligned" />
+      <Property name="Text" value="V" />
+    </Child>
+    <StateImagery name="Enabled" />
+    <StateImagery name="Disabled" />
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/MultiColumnList">
+    <NamedArea name="ItemRenderingArea">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <WidgetDim widget="__auto_listheader__" dimension="BottomEdge" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="ItemRenderingAreaHScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <WidgetDim widget="__auto_listheader__" dimension="BottomEdge" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Height" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="ItemRenderingAreaVScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <WidgetDim widget="__auto_listheader__" dimension="BottomEdge" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="ItemRenderingAreaHVScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <WidgetDim widget="__auto_listheader__" dimension="BottomEdge" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Height" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <Child type="MankindDefenders/ListHeader" nameSuffix="__auto_listheader__">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="Height">
+          <FontDim type="LineSpacing">
+            <DimOperator op="Add">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height" />
+            </DimOperator>
+          </FontDim>
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="MankindDefenders/HorizontalScrollbar" nameSuffix="__auto_hscrollbar__">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height" />
+            </DimOperator>
+          </AbsoluteDim>
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" type="Width">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="Height">
+          <ImageDim imageset="MankindDefenders" image="Handle" dimension="Height" />
+        </Dim>
+      </Area>
+      <VertAlignment type="BottomAligned" />
+      <Property name="NonClient" value="True" />
+    </Child>
+    <Child type="MankindDefenders/VerticalScrollbar" nameSuffix="__auto_vscrollbar__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width" />
+            </DimOperator>
+          </AbsoluteDim>
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height" />
+        </Dim>
+        <Dim type="Width">
+          <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+      <HorzAlignment type="RightAligned" />
+      <Property name="NonClient" value="True" />
+    </Child>
+    <ImagerySection name="main">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTrayTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTrayTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTrayBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTrayBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTrayL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTrayT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTrayR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTrayB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTrayM" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/SimpleListbox">
+    <NamedArea name="ItemRenderArea">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="ItemRenderAreaHScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Height" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="ItemRenderAreaVScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="ItemRenderAreaHVScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Height" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <Child type="MankindDefenders/HorizontalScrollbar" nameSuffix="__auto_hscrollbar__">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height" />
+            </DimOperator>
+          </AbsoluteDim>
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" type="Width">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width">
+                <DimOperator op="Add">
+                  <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+                </DimOperator>
+              </ImageDim>
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="Height">
+          <ImageDim imageset="MankindDefenders" image="Handle" dimension="Height" />
+        </Dim>
+      </Area>
+      <VertAlignment type="BottomAligned" />
+      <Property name="NonClient" value="True" />
+    </Child>
+    <Child type="MankindDefenders/VerticalScrollbar" nameSuffix="__auto_vscrollbar__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width" />
+            </DimOperator>
+          </AbsoluteDim>
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTrayT" dimension="Height" />
+        </Dim>
+        <Dim type="Width">
+          <ImageDim imageset="MankindDefenders" image="Handle" dimension="Width" />
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTrayB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+      <HorzAlignment type="RightAligned" />
+      <Property name="NonClient" value="True" />
+    </Child>
+    <ImagerySection name="main">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTrayTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTrayTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTrayBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTrayBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTrayL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTrayT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTrayR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTrayB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTrayM" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/ListboxItem">
+    <PropertyDefinition name="TextColour" initialValue="FF000000" redrawOnWrite="true" />
+    <PropertyDefinition name="SelectedTextColour" initialValue="FF000000" redrawOnWrite="true" />
+    <Property name="Selectable" value="True" />
+    <NamedArea name="ContentSize">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <FontDim type="HorzExtent">
+            <DimOperator op="Add">
+              <ImageDim imageset="MankindDefenders" image="MiniTextBoxL" dimension="Width" />
+            </DimOperator>
+          </FontDim>
+        </Dim>
+        <Dim type="Height">
+          <FontDim type="LineSpacing">
+            <DimOperator op="Add">
+              <ImageDim imageset="MankindDefenders" image="MiniTextBoxT" dimension="Height" />
+            </DimOperator>
+          </FontDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <ImagerySection name="main">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTextBoxTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTextBoxTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTextBoxBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTextBoxBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTextBoxL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTextBoxT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTextBoxR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTextBoxB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTextBoxM" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="selection">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTextBoxOverTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTextBoxOverTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTextBoxOverBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTextBoxOverBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTextBoxOverL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTextBoxOverT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTextBoxOverR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTextBoxOverB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTextBoxOverM" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="label">
+      <TextComponent>
+        <Area>
+          <Dim type="TopEdge">
+            <ImageDim imageset="MankindDefenders" image="MiniTextBoxT" dimension="Height">
+              <DimOperator op="Divide">
+                <AbsoluteDim value="2" />
+              </DimOperator>
+            </ImageDim>
+          </Dim>
+          <Dim type="LeftEdge">
+            <ImageDim imageset="MankindDefenders" image="MiniTextBoxL" dimension="Width">
+              <DimOperator op="Divide">
+                <AbsoluteDim value="2" />
+              </DimOperator>
+            </ImageDim>
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width">
+              <DimOperator op="Subtract">
+                <ImageDim imageset="MankindDefenders" image="MiniTextBoxL" dimension="Width" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height">
+              <DimOperator op="Subtract">
+                <ImageDim imageset="MankindDefenders" image="MiniTextBoxT" dimension="Width" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+        </Area>
+      </TextComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled">
+      <Layer>
+        <Section section="main" />
+        <Section section="label">
+          <ColourProperty name="TextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="main" />
+        <Section section="label">
+          <ColourProperty name="TextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="SelectedEnabled">
+      <Layer>
+        <Section section="selection" />
+        <Section section="label">
+          <ColourProperty name="SelectedTextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="SelectedDisabled">
+      <Layer>
+        <Section section="selection" />
+        <Section section="label">
+          <ColourProperty name="SelectedTextColour" />
+        </Section>
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- ******************************************************************************** -->
+  <!--                                      Varios                                      -->
+  <!-- ******************************************************************************** -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/Slider">
+    <Property name="VerticalSlider" value="False" />
+    <Property name="MouseButtonDownAutoRepeat" value="True" />
+    <Property name="WantsMultiClickEvents" value="False" />
+    <NamedArea name="ThumbTrackArea">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1" type="Width" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="1" type="Height" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <Child type="DefaultWindow" nameSuffix="__auto_incbtn__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="0" type="Width" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="0" type="Width" />
+        </Dim>
+      </Area>
+      <Property name="Visible" value="False" />
+    </Child>
+    <Child type="DefaultWindow" nameSuffix="__auto_decbtn__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="0" type="Width" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="0" type="Width" />
+        </Dim>
+      </Area>
+      <Property name="Visible" value="False" />
+    </Child>
+    <Child type="MankindDefenders/Thumb" nameSuffix="__auto_thumb__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1" type="Height" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="1" type="Height" />
+        </Dim>
+      </Area>
+      <Property name="HorzFree" value="True" />
+    </Child>
+    <ImagerySection name="main">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <UnifiedDim scale="0.1" type="Height" />
+          </Dim>
+          <Dim type="TopEdge">
+            <UnifiedDim scale="0.11" type="Height" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge">
+              <DimOperator op="Subtract">
+                <UnifiedDim scale="0.1" type="Height" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="0.78" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="LeftEdge" imageset="MankindDefenders" image="HorzTrackL" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="HorzTrackR" />
+        <Image type="Background" imageset="MankindDefenders" image="HorzTrackM" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/HorizontalScrollbar">
+    <Property name="VerticalScrollbar" value="False" />
+    <Property name="WantsMultiClickEvents" value="False" />
+    <NamedArea name="ThumbTrackArea">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1" type="Width" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="1" type="Height" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <Child type="DefaultWindow" nameSuffix="__auto_incbtn__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="0" type="Width" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="0" type="Width" />
+        </Dim>
+      </Area>
+      <Property name="Visible" value="False" />
+    </Child>
+    <Child type="DefaultWindow" nameSuffix="__auto_decbtn__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="0" type="Width" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="0" type="Width" />
+        </Dim>
+      </Area>
+      <Property name="Visible" value="False" />
+    </Child>
+    <Child type="MankindDefenders/Thumb" nameSuffix="__auto_thumb__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1" type="Height" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="1" type="Height" />
+        </Dim>
+      </Area>
+      <Property name="HorzFree" value="True" />
+    </Child>
+    <ImagerySection name="main">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <UnifiedDim scale="0.1" type="Height" />
+          </Dim>
+          <Dim type="TopEdge">
+            <UnifiedDim scale="0.11" type="Height" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge">
+              <DimOperator op="Subtract">
+                <UnifiedDim scale="0.1" type="Height" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="0.78" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="LeftEdge" imageset="MankindDefenders" image="HorzTrackL" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="HorzTrackR" />
+        <Image type="Background" imageset="MankindDefenders" image="HorzTrackM" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/VerticalScrollbar">
+    <Property name="VerticalScrollbar" value="True" />
+    <Property name="WantsMultiClickEvents" value="False" />
+    <NamedArea name="ThumbTrackArea">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1" type="Width" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="1" type="Height" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <Child type="DefaultWindow" nameSuffix="__auto_incbtn__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="0" type="Width" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="0" type="Width" />
+        </Dim>
+      </Area>
+      <Property name="Visible" value="False" />
+    </Child>
+    <Child type="DefaultWindow" nameSuffix="__auto_decbtn__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="0" type="Width" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="0" type="Width" />
+        </Dim>
+      </Area>
+      <Property name="Visible" value="False" />
+    </Child>
+    <Child type="MankindDefenders/Thumb" nameSuffix="__auto_thumb__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1" type="Width" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="1" type="Width" />
+        </Dim>
+      </Area>
+      <Property name="VertFree" value="True" />
+    </Child>
+    <ImagerySection name="main">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <UnifiedDim scale="0.11" type="Width" />
+          </Dim>
+          <Dim type="TopEdge">
+            <UnifiedDim scale="0.1" type="Width" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="0.78" type="Width" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge">
+              <DimOperator op="Subtract">
+                <UnifiedDim scale="0.1" type="Width" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+        </Area>
+        <Image type="TopEdge" imageset="MankindDefenders" image="VertTrackT" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="VertTrackB" />
+        <Image type="Background" imageset="MankindDefenders" image="VertTrackM" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="main" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/ProgressBar">
+    <NamedArea name="ProgressArea">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" type="RightEdge" />
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1" type="BottomEdge" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <ImagerySection name="frame">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTextBoxTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTextBoxTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTextBoxBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTextBoxBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTextBoxL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTextBoxT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTextBoxR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTextBoxB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTextBoxM" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="progress">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width">
+              <DimOperator op="Multiply">
+                <PropertyDim name="CurrentProgress" />
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTextBoxOverTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTextBoxOverTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTextBoxOverBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTextBoxOverBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTextBoxOverL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTextBoxOverT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTextBoxOverR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTextBoxOverB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTextBoxOverM" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled">
+      <Layer>
+        <Section section="frame" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="frame" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="EnabledProgress">
+      <Layer>
+        <Section section="progress"/>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledProgress">
+      <Layer>
+        <Section section="progress"/>
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- ******************************************************************************** -->
+  <!--                          Elementos auxiliares de apoyo                           -->
+  <!-- ******************************************************************************** -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/Tooltip">
+    <NamedArea name="TextArea">
+      <Area>
+        <Dim type="LeftEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTextBoxL" dimension="Width" />
+        </Dim>
+        <Dim type="TopEdge">
+          <ImageDim imageset="MankindDefenders" image="MiniTextBoxT" dimension="Height" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTextBoxR" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" type="BottomEdge">
+            <DimOperator op="Subtract">
+              <ImageDim imageset="MankindDefenders" image="MiniTextBoxB" dimension="Height" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <ImagerySection name="main">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTextBoxTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTextBoxTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTextBoxBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTextBoxBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTextBoxL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTextBoxT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTextBoxR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTextBoxB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTextBoxM" />
+        <Colours topLeft="E2FFFFFF" topRight="E2FFFFFF" bottomLeft="E2FFFFFF" bottomRight="E2FFFFFF" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="label">
+      <TextComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <Colours topLeft="FF000000" topRight="FF000000" bottomLeft="FF000000" bottomRight="FF000000" />
+        <VertFormat type="CentreAligned" />
+        <HorzFormat type="CentreAligned" />
+      </TextComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled">
+      <Layer>
+        <Section section="main" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="main" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/DialogTitlebar">
+    <PropertyDefinition name="CaptionColour" initialValue="FFe5ffb2" redrawOnWrite="true" />
+    <PropertyDefinition name="VertFormatting" initialValue="CentreAligned" />
+    <PropertyDefinition name="HorzFormatting" initialValue="CentreAligned" />
+    <Property name="NonClient" value="True" />
+    <ImagerySection name="normal">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <Image type="LeftEdge" imageset="MankindDefenders" image="CaptionL" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="CaptionR" />
+        <Image type="Background" imageset="MankindDefenders" image="CaptionM" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="caption">
+      <TextComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <ColourProperty name="CaptionColour" />
+        <VertFormatProperty name="VertFormatting" />
+        <HorzFormatProperty name="HorzFormatting" />
+      </TextComponent>
+    </ImagerySection>
+    <StateImagery name="Active">
+      <Layer>
+        <Section section="normal" />
+        <Section section="caption" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Inactive">
+      <Layer>
+        <Section section="normal" />
+        <Section section="caption" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="normal" />
+        <Section section="caption" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/ListHeader">
+    <Property name="SegmentWidgetType" value="MankindDefenders/HeaderSegment" />
+    <StateImagery name="Enabled" />
+    <StateImagery name="Disabled" />
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/HeaderSegment">
+    <Property name="SizingCursorImage" value="set:OgreTrayImages image:MouseArrow" />
+    <Property name="MovingCursorImage" value="set:OgreTrayImages image:MouseArrow" />
+    <ImagerySection name="segment">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTrayTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTrayTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTrayBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTrayBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTrayL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTrayT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTrayR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTrayB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTrayM" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="segment_hover">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTextBoxOverTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTextBoxOverTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTextBoxOverBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTextBoxOverBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTextBoxOverL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTextBoxOverT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTextBoxOverR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTextBoxOverB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTextBoxOverM" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="ascend_icon">
+      <TextComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1.0" type="RightEdge">
+              <DimOperator op="Subtract">
+                <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width">
+                  <DimOperator op="Divide">
+                    <AbsoluteDim value="2" />
+                  </DimOperator>
+                </ImageDim>
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Text string="+" />
+        <Colours topLeft="FF000000" topRight="FF000000" bottomLeft="FF000000" bottomRight="FF000000" />
+        <HorzFormat type="RightAligned" />
+      </TextComponent>
+    </ImagerySection>
+    <ImagerySection name="descend_icon">
+      <TextComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1.0" type="RightEdge">
+              <DimOperator op="Subtract">
+                <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width">
+                  <DimOperator op="Divide">
+                    <AbsoluteDim value="2" />
+                  </DimOperator>
+                </ImageDim>
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Text string="-" />
+        <Colours topLeft="FF000000" topRight="FF000000" bottomLeft="FF000000" bottomRight="FF000000" />
+        <HorzFormat type="RightAligned" />
+      </TextComponent>
+    </ImagerySection>
+    <ImagerySection name="label">
+      <TextComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0">
+              <DimOperator op="Add">
+                <ImageDim imageset="MankindDefenders" image="MiniTrayL" dimension="Width">
+                  <DimOperator op="Divide">
+                    <AbsoluteDim value="2" />
+                  </DimOperator>
+                </ImageDim>
+              </DimOperator>
+            </AbsoluteDim>
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1.0" type="RightEdge">
+              <DimOperator op="Subtract">
+                <ImageDim imageset="MankindDefenders" image="MiniTrayR" dimension="Width">
+                  <DimOperator op="Divide">
+                    <AbsoluteDim value="2" />
+                  </DimOperator>
+                </ImageDim>
+              </DimOperator>
+            </UnifiedDim>
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Colours topLeft="FF000000" topRight="FF000000" bottomLeft="FF000000" bottomRight="FF000000" />
+        <VertFormat type="CentreAligned" />
+      </TextComponent>
+    </ImagerySection>
+    <StateImagery name="Normal">
+      <Layer>
+        <Section section="segment" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Hover">
+      <Layer>
+        <Section section="segment_hover" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="SplitterHover">
+      <Layer>
+        <Section section="segment" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DragGhost" clipped="false">
+      <Layer priority="1">
+        <Section section="segment">
+          <Colours topLeft="7FEFEFEF" topRight="7FEFEFEF" bottomLeft="7FEFEFEF" bottomRight="7FEFEFEF" />
+        </Section>
+        <Section section="label">
+          <Colours topLeft="7F000000" topRight="7F000000" bottomLeft="7F000000" bottomRight="7F000000" />
+        </Section>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="AscendingSortIcon">
+      <Layer>
+        <Section section="ascend_icon" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DescendingSortIcon">
+      <Layer>
+        <Section section="descend_icon" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="GhostAscendingSortIcon" clipped="false">
+      <Layer priority="1">
+        <Section section="ascend_icon">
+          <Colours topLeft="90FFFFFF" topRight="90FFFFFF" bottomLeft="90FFFFFF" bottomRight="90FFFFFF" />
+        </Section>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="GhostDescendingSortIcon" clipped="false">
+      <Layer priority="1">
+        <Section section="descend_icon">
+          <Colours topLeft="90FFFFFF" topRight="90FFFFFF" bottomLeft="90FFFFFF" bottomRight="90FFFFFF" />
+        </Section>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled" />
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/TabButton">
+    <ImagerySection name="label">
+      <TextComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Colours topLeft="FF000000" topRight="FF000000" bottomLeft="FF000000" bottomRight="FF000000" />
+        <VertFormat type="CentreAligned" />
+        <HorzFormat type="CentreAligned" />
+      </TextComponent>
+    </ImagerySection>
+    <ImagerySection name="normal">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTextBoxTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTextBoxTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTextBoxBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTextBoxBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTextBoxL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTextBoxT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTextBoxR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTextBoxB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTextBoxM" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="hover">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTextBoxOverTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTextBoxOverTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTextBoxOverBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTextBoxOverBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTextBoxOverL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTextBoxOverT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTextBoxOverR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTextBoxOverB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTextBoxOverM" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="TopNormal">
+      <Layer>
+        <Section section="normal" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="BottomNormal">
+      <Layer>
+        <Section section="normal" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="TopHover">
+      <Layer>
+        <Section section="hover" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="BottomHover">
+      <Layer>
+        <Section section="hover" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="TopSelected">
+      <Layer>
+        <Section section="hover" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="BottomSelected">
+      <Layer>
+        <Section section="hover" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="TopPushed">
+      <Layer>
+        <Section section="normal" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="BottomPushed">
+      <Layer>
+        <Section section="normal" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="TopDisabled">
+      <Layer>
+        <Section section="normal" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="BottomDisabled">
+      <Layer>
+        <Section section="normal" />
+        <Section section="label" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/TabButtonPanel">
+    <PropertyDefinition name="EnableTop" initialValue="1" redrawOnWrite="true" layoutOnWrite="true" />
+    <PropertyDefinition name="EnableBottom" initialValue="1" redrawOnWrite="true" layoutOnWrite="true" />
+    <ImagerySection name="normal">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTrayTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTrayTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTrayBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTrayBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTrayL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTrayT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTrayR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTrayB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTrayM" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled">
+      <Layer>
+        <Section section="normal" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="normal" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+  <!-- TODO: Widget de prueba... -->
+  <WidgetLook name="MankindDefenders/TabContentPanel">
+    <PropertyDefinition name="EnableTop" initialValue="0" redrawOnWrite="true" layoutOnWrite="true" />
+    <PropertyDefinition name="EnableBottom" initialValue="0" redrawOnWrite="true" layoutOnWrite="true" />
+    <ImagerySection name="normal">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" type="RightEdge" />
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" type="BottomEdge" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="MankindDefenders" image="MiniTrayTL" />
+        <Image type="TopRightCorner" imageset="MankindDefenders" image="MiniTrayTR" />
+        <Image type="BottomLeftCorner" imageset="MankindDefenders" image="MiniTrayBL" />
+        <Image type="BottomRightCorner" imageset="MankindDefenders" image="MiniTrayBR" />
+        <Image type="LeftEdge" imageset="MankindDefenders" image="MiniTrayL" />
+        <Image type="TopEdge" imageset="MankindDefenders" image="MiniTrayT" />
+        <Image type="RightEdge" imageset="MankindDefenders" image="MiniTrayR" />
+        <Image type="BottomEdge" imageset="MankindDefenders" image="MiniTrayB" />
+        <Image type="Background" imageset="MankindDefenders" image="MiniTrayM" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled">
+      <Layer>
+        <Section section="normal" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="normal" />
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  <!-- FIN: Widget de prueba... -->
+
+</Falagard>

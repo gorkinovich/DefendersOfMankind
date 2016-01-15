@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="Mission">
+    <Property Name="Text" Value="Mission" />
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+
+    <!-- TODO: Completar el fichero... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                               ...                               -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: XXX de prueba... -->
+    <Window Type="MankindDefenders/StaticText" Name="Mission/GameScore" >
+      <Property Name="AlwaysOnTop" Value="True" />
+      <!--<Property Name="Font" Value="cyberspace" />-->
+      <Property Name="Font" Value="DejaVuSans-10" />
+      <Property Name="UnifiedAreaRect" Value="{{0.88,0},{0,0},{1,0},{0.08,0}}" />
+      <Property Name="Text" Value="0" />
+    </Window>
+
+    <Window Type="MankindDefenders/StaticText" Name="Mission/InfoDebug" >
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="DejaVuSans-10" />
+      <Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.89,0},{0.24,0},{0.99,0}}" />
+      <Property Name="Text" Value="FPS: 0" />
+    </Window>
+    <!-- FIN: XXX de prueba... -->
+
+    <!-- TODO: XXX de prueba... -->
+    <!--<Window Type="MankindDefenders/Sprite" Name="Mission/LifeBar1" >
+      <Property Name="Image"  Value="set:HUD image:P1LifeBar1" />
+    </Window>
+    <Window Type="MankindDefenders/Sprite" Name="Mission/LifeBar2" >
+      <Property Name="Image"  Value="set:HUD image:P1LifeBar2" />
+    </Window>
+    <Window Type="MankindDefenders/Sprite" Name="Mission/LifeBar3" >
+      <Property Name="Image"  Value="set:HUD image:P1LifeBar3" />
+    </Window>
+    <Window Type="MankindDefenders/Sprite" Name="Mission/LifeBar4" >
+      <Property Name="Image"  Value="set:HUD image:P1LifeBar4" />
+    </Window>
+    <Window Type="MankindDefenders/Sprite" Name="Mission/LifeBar5" >
+      <Property Name="Image"  Value="set:HUD image:P1LifeBar5" />
+    </Window>
+    <Window Type="MankindDefenders/Sprite" Name="Mission/LifeBar6" >
+      <Property Name="Image"  Value="set:HUD image:P1LifeBar6" />
+    </Window>
+    <Window Type="MankindDefenders/Sprite" Name="Mission/LifeBar7" >
+      <Property Name="Image"  Value="set:HUD image:P1LifeBar7" />
+    </Window>
+    <Window Type="MankindDefenders/Sprite" Name="Mission/LifeBar8" >
+      <Property Name="Image"  Value="set:HUD image:P1LifeBar8" />
+    </Window>
+    <Window Type="MankindDefenders/Sprite" Name="Mission/LifeBar9" >
+      <Property Name="Image"  Value="set:HUD image:P1LifeBar9" />
+    </Window>
+    <Window Type="MankindDefenders/Sprite" Name="Mission/LifeBar10" >
+      <Property Name="Image"  Value="set:HUD image:P1LifeBar10" />
+    </Window>
+    <Window Type="MankindDefenders/Sprite" Name="Mission/LifeBar11" >
+      <Property Name="Image"  Value="set:HUD image:P1LifeBar11" />
+    </Window>
+    <Window Type="MankindDefenders/Sprite" Name="Mission/LifeBar12" >
+      <Property Name="Image"  Value="set:HUD image:P1LifeBar12" />
+    </Window>
+    <Window Type="MankindDefenders/Sprite" Name="Mission/LifeBar13" >
+      <Property Name="Image"  Value="set:HUD image:P1LifeBar13" />
+    </Window>
+    <Window Type="MankindDefenders/Sprite" Name="Mission/LifeBar14" >
+      <Property Name="Image"  Value="set:HUD image:P1LifeBar14" />
+    </Window>
+    <Window Type="MankindDefenders/Sprite" Name="Mission/LifeBar15" >
+      <Property Name="Image"  Value="set:HUD image:P1LifeBar15" />
+    </Window>
+    <Window Type="MankindDefenders/Sprite" Name="Mission/LifeBar16" >
+      <Property Name="Image"  Value="set:HUD image:P1LifeBar16" />
+    </Window>
+    <Window Type="MankindDefenders/Sprite" Name="Mission/LifeBar17" >
+      <Property Name="Image"  Value="set:HUD image:P1LifeBar17" />
+    </Window>
+    <Window Type="MankindDefenders/Sprite" Name="Mission/LifeBar18" >
+      <Property Name="Image"  Value="set:HUD image:P1LifeBar18" />
+    </Window>
+    <Window Type="MankindDefenders/Sprite" Name="Mission/LifeBar19" >
+      <Property Name="Image"  Value="set:HUD image:P1LifeBar19" />
+    </Window>
+    <Window Type="MankindDefenders/Sprite" Name="Mission/LifeBar20" >
+      <Property Name="Image"  Value="set:HUD image:P1LifeBar20" />
+    </Window>-->
+    <!-- FIN: XXX de prueba... -->
+
+    <!-- TODO: XXX de prueba... -->
+    <!--<Window Type="MankindDefenders/Sprite" Name="Mission/LifePicture1" >
+      <Property Name="Image"  Value="set:HUD image:LifePicture" />
+    </Window>
+    <Window Type="MankindDefenders/Sprite" Name="Mission/LifePicture2" >
+      <Property Name="Image"  Value="set:HUD image:LifePicture" />
+    </Window>
+    <Window Type="MankindDefenders/Sprite" Name="Mission/LifePicture3" >
+      <Property Name="Image"  Value="set:HUD image:LifePicture" />
+    </Window>-->
+    <!-- FIN: XXX de prueba... -->
+  </Window>
+</GUILayout>

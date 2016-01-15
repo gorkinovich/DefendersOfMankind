@@ -1,0 +1,22 @@
+
+material PlanetEarthLand
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588235 0.588235 0.588235 1
+			diffuse 0.588235 0.588235 0.588235 1
+			specular 0 0 0 1 25
+
+			texture_unit
+			{
+				texture EarthMap_2500x1250.jpg
+			}
+		}
+
+	}
+
+}
+
+

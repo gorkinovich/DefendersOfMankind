@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Imageset Name="MultiColumnSelector" Imagefile="MultiColumnSelector.png" NativeHorzRes="800" NativeVertRes="600" AutoScaled="true" >
+    <Image Name="Selector" XPos="0" YPos="0" Width="32" Height="32" />
+</Imageset>

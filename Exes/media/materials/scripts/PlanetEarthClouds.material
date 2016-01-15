@@ -1,0 +1,25 @@
+
+material PlanetEarthClouds
+{
+	technique
+	{
+		pass
+		{
+			//ambient 0.588235 0.588235 0.588235 1
+			//diffuse 0.588235 0.588235 0.588235 1
+			//specular 0 0 0 1 10
+			//emissive 1 1 1 1
+			scene_blend alpha_blend
+
+			texture_unit
+			{
+				texture EarthClouds_2500x1250.png
+				colour_op_ex blend_current_alpha src_texture src_current
+			}
+		}
+
+	}
+
+}
+
+

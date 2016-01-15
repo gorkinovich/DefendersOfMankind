@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<Font Name="cyberspace" Filename="cyberspace.imageset" Type="Pixmap" NativeHorzRes="800" NativeVertRes="600" AutoScaled="false">
+<Mapping Codepoint="0032" Image="0032" HorzAdvance="11"/>
+<Mapping Codepoint="0048" Image="0048" HorzAdvance="22" />
+<Mapping Codepoint="0049" Image="0049" HorzAdvance="12" />
+<Mapping Codepoint="0050" Image="0050" HorzAdvance="22" />
+<Mapping Codepoint="0051" Image="0051" HorzAdvance="22" />
+<Mapping Codepoint="0052" Image="0052" HorzAdvance="20" />
+<Mapping Codepoint="0053" Image="0053" HorzAdvance="22" />
+<Mapping Codepoint="0054" Image="0054" HorzAdvance="22" />
+<Mapping Codepoint="0055" Image="0055" HorzAdvance="21" />
+<Mapping Codepoint="0056" Image="0056" HorzAdvance="22" />
+<Mapping Codepoint="0057" Image="0057" HorzAdvance="22" />
+</Font>

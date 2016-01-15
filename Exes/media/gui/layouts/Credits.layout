@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="Credits">
+    <Property Name="Text" Value="Credits" />
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+
+    <!-- TODO: Completar el fichero... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos decorativos                               -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: Fondo de prueba... -->
+    <Window Type="MankindDefenders/MenuBackground" Name="Credits/Background">
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+      <Property Name="Image" Value="set:CreditsBackground image:CreditsBackground43" />
+    </Window>
+    <!-- FIN: Fondo de prueba... -->
+
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos interactivos                              -->
+    <!-- ******************************************************************************** -->
+
+
+    <Window Type="MankindDefenders/Button" Name="Credits/BackButton">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="DejaVuSans-10" />
+      <Property Name="UnifiedAreaRect" Value="{{0.7,0},{0.82,0},{0.9,0},{0.9,0}}" />
+      <Property Name="Text" Value="Back" />
+    </Window> 
+
+    
+  </Window>
+</GUILayout>

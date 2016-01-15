@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="MissionFailed">
+    <Property Name="Text" Value="MissionFailed" />
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+
+    <!-- TODO: Completar el fichero... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos decorativos                               -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: Fondo de prueba... -->
+    <Window Type="MankindDefenders/MenuBackground" Name="MissionFailed/Background">
+      <Property Name="Image" Value="set:TestBackground image:TestBackground43" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+    </Window>
+    <!-- FIN: Fondo de prueba... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos interactivos                              -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: Panel de prueba... -->
+    <Window Type="MankindDefenders/Panel" Name="MissionFailed/MainDialog">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.2,0},{0.8,0},{0.8,0}}" />
+
+      <Window Type="MankindDefenders/StaticText" Name="MissionFailed/Message">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.9,0},{0.4,0}}" />
+        <Property Name="Text" Value="Mission Failed!" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="MissionFailed/TryAgainButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,0},{0.6,0},{0.45,0},{0.7,0}}" />
+        <Property Name="Text" Value="Try mission again" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="MissionFailed/SpaceMapButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.55,0},{0.6,0},{0.95,0},{0.7,0}}" />
+        <Property Name="Text" Value="Return to space map" />
+      </Window>
+    </Window>
+    <!-- FIN: Pane de prueba... -->
+  </Window>
+</GUILayout>

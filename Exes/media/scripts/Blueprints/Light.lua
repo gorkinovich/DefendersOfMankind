@@ -1,0 +1,5 @@
+Light = {
+    ["Components"] = {
+        "Light", "Position"
+    }
+};

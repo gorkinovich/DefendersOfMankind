@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<Imageset Name="cyberspace" Imagefile="cyberspace.png" NativeHorzRes="800" NativeVertRes="600" AutoScaled="false">
+<Image Name="0032" XPos="0" YPos="0" Width="0" Height="0" XOffset="0"/>
+<Image Name="0048" XPos="22" YPos="69" Width="24" Height="23" XOffset="0"/>
+<Image Name="0049" XPos="0" YPos="23" Width="14" Height="23" XOffset="0"/>
+<Image Name="0050" XPos="93" YPos="0" Width="24" Height="23" XOffset="0"/>
+<Image Name="0051" XPos="69" YPos="0" Width="24" Height="23" XOffset="0"/>
+<Image Name="0052" XPos="0" YPos="0" Width="22" Height="23" XOffset="0"/>
+<Image Name="0053" XPos="22" YPos="23" Width="24" Height="23" XOffset="0"/>
+<Image Name="0054" XPos="22" YPos="46" Width="24" Height="23" XOffset="0"/>
+<Image Name="0055" XPos="22" YPos="0" Width="23" Height="23" XOffset="0"/>
+<Image Name="0056" XPos="22" YPos="92" Width="24" Height="23" XOffset="0"/>
+<Image Name="0057" XPos="45" YPos="0" Width="24" Height="23" XOffset="0"/>
+</Imageset>

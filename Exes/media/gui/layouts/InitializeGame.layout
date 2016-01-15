@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="InitializeGame">
+    <Property Name="Text" Value="InitializeGame" />
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+
+    <!-- TODO: Completar el fichero... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos decorativos                               -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: Fondo de prueba... -->
+    <Window Type="MankindDefenders/MenuBackground" Name="InitializeGame/Background">
+      <Property Name="Image" Value="set:TestBackground image:TestBackground43" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+    </Window>
+    <!-- FIN: Fondo de prueba... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos interactivos                              -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: XXX de prueba... -->
+    <Window Type="MankindDefenders/StaticText" Name="InitializeGame/Title">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="DejaVuSans-10" />
+      <Property Name="FrameEnabled" Value="True" />
+      <Property Name="BackgroundEnabled" Value="True" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.2,0},{0.9,0},{0.3,0}}" />
+      <Property Name="Text" Value="Loading game..." />
+    </Window>
+
+    <Window Type="MankindDefenders/ProgressBar" Name="InitializeGame/LoadingBar">
+      <Property Name="Font" Value="DejaVuSans-10" />
+      <Property Name="Text" Value="Test Progress Bar" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.7,0},{0.9,0},{0.8,0}}" />
+      <Property Name="CurrentProgress" Value="0.0" />
+    </Window>
+
+    <Window Type="MankindDefenders/StaticText" Name="InitializeGame/LoadingText">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="DejaVuSans-10" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.7,0},{0.9,0},{0.8,0}}" />
+      <Property Name="Text" Value="0%" />
+    </Window>
+    <!-- FIN: XXX de prueba... -->
+  </Window>
+</GUILayout>

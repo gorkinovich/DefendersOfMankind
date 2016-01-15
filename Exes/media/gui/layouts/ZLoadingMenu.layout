@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout >
+    <Window Type="DefaultWindow" Name="LoadingMenu" >
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+		
+		<Property Name="Text" Value="DoM" />
+	
+		<Window Type="OgreTray/MenuBg" Name="LoadingMenu/BackGround" >
+			<Property Name="Image" Value="set:LoadingBackground image:LoadingBackground" />
+			<Property Name="AlwaysOnTop" Value="False" />
+			<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+			<Property Name="ImageWidth" Value="1000" />
+			<Property Name="ImageHeight" Value="751" />
+		</Window>
+		
+		<Window Type="OgreTray/Sprite" Name="ProgressBarStep0" >
+				<Property Name="Image"  Value="set:LoadingProgressBar image:ProgressBar0" />
+				<Property Name="UnifiedAreaRect" Value="{{0.175,0},{0.551,0},{0.835,0},{0.617,0}}" />
+		</Window>
+		<Window Type="OgreTray/Sprite" Name="ProgressBarStep1" >
+				<Property Name="Image"  Value="set:LoadingProgressBar image:ProgressBar25" />
+				<Property Name="UnifiedAreaRect" Value="{{0.175,0},{0.551,0},{0.835,0},{0.617,0}}" />
+		</Window>
+		<Window Type="OgreTray/Sprite" Name="ProgressBarStep2" >
+				<Property Name="Image"  Value="set:LoadingProgressBar image:ProgressBar50" />
+				<Property Name="UnifiedAreaRect" Value="{{0.175,0},{0.551,0},{0.835,0},{0.617,0}}" />
+		</Window>
+		<Window Type="OgreTray/Sprite" Name="ProgressBarStep3" >
+				<Property Name="Image"  Value="set:LoadingProgressBar image:ProgressBar75" />
+				<Property Name="UnifiedAreaRect" Value="{{0.175,0},{0.551,0},{0.835,0},{0.617,0}}" />
+		</Window>
+		<Window Type="OgreTray/Sprite" Name="ProgressBarStep4" >
+				<Property Name="Image"  Value="set:LoadingProgressBar image:ProgressBar100" />
+				<Property Name="UnifiedAreaRect" Value="{{0.175,0},{0.551,0},{0.835,0},{0.617,0}}" />
+		</Window>
+		
+	
+        
+	</Window>
+</GUILayout>

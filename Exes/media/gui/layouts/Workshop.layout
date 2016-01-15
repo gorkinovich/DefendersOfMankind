@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="Workshop">
+    <Property Name="Text" Value="Workshop" />
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+
+    <!-- TODO: Completar el fichero... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos decorativos                               -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: Fondo de prueba... -->
+    <Window Type="MankindDefenders/MenuBackground" Name="Workshop/Background">
+      <Property Name="Image" Value="set:TestBackground image:TestBackground43" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+    </Window>
+    <!-- FIN: Fondo de prueba... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos interactivos                              -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: XXX de prueba... -->
+    <Window Type="MankindDefenders/InvisiblePanel" Name="Workshop/MainPanel">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+
+      <Window Type="MankindDefenders/Button" Name="Workshop/PartButton1">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.2,0},{0.45,0},{0.3,0}}" />
+        <Property Name="Text" Value="Part 1" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="Workshop/PartButton2">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.55,0},{0.2,0},{0.9,0},{0.3,0}}" />
+        <Property Name="Text" Value="Part 2" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="Workshop/PartButton3">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.5,0},{0.45,0},{0.6,0}}" />
+        <Property Name="Text" Value="Part 3" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="Workshop/PartButton4">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.55,0},{0.5,0},{0.9,0},{0.6,0}}" />
+        <Property Name="Text" Value="Part 4" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="Workshop/HelpButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.8,0},{0.45,0},{0.9,0}}" />
+        <Property Name="Text" Value="Help" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="Workshop/BackButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.55,0},{0.8,0},{0.9,0},{0.9,0}}" />
+        <Property Name="Text" Value="Back" />
+      </Window>
+    </Window>
+    <!-- FIN: XXX de prueba... -->
+
+    <!-- TODO: XXX de prueba... -->
+    <Window Type="MankindDefenders/Panel" Name="Workshop/PartsDialog">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.9,0},{0.9,0}}" />
+
+      <Window Type="MankindDefenders/MultiColumnList" Name="Workshop/Dialog/Parts">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="SelectionMode" Value="RowSingle" />
+        <Property Name="SortSettingEnabled" Value="False " />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.45,0},{0.7,0}}" />
+        <Property Name="Text" Value="" />
+      </Window>
+
+      <Window Type="MankindDefenders/StaticText" Name="Workshop/Dialog/Properties">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="FrameEnabled" Value="True" />
+        <Property Name="BackgroundEnabled" Value="True" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.55,0},{0.1,0},{0.9,0},{0.7,0}}" />
+        <Property Name="Text" Value="Properties:&#10;...&#10;..." />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="Workshop/Dialog/BuyButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.8,0},{0.25,0},{0.9,0}}" />
+        <Property Name="Text" Value="Buy" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="Workshop/Dialog/SelectButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.3,0},{0.8,0},{0.45,0},{0.9,0}}" />
+        <Property Name="Text" Value="Select" />
+      </Window>
+
+      <Window Type="MankindDefenders/StaticText" Name="Workshop/Dialog/Money">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.5,0},{0.8,0},{0.7,0},{0.9,0}}" />
+        <Property Name="Text" Value="100$" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="Workshop/Dialog/BackButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.75,0},{0.8,0},{0.9,0},{0.9,0}}" />
+        <Property Name="Text" Value="Back" />
+      </Window>
+    </Window>
+    <!-- FIN: XXX de prueba... -->
+  </Window>
+</GUILayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<Imageset Name="TestBackground" Imagefile="TestBackground.png" AutoScaled="false">
+    <Image Name="TestBackground43" XPos="0" YPos="0" Width="1280" Height="960" />
+    <Image Name="TestBackground169" XPos="0" YPos="120" Width="1280" Height="720" />
+</Imageset>

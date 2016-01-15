@@ -1,0 +1,84 @@
+material Material#41
+{
+	technique
+	{
+		pass
+		{			
+			ambient 1 0.501961 0 1
+			diffuse 1 0.501961 0 1
+			specular 0 0 0 1 10
+		}
+
+	}
+
+}
+
+
+
+material Material#37
+{
+	technique
+	{
+		pass
+		{			
+			ambient 0 0.733333 1 1
+			diffuse 0 0.733333 1 1
+			specular 0 0 0 1 10
+			cull_hardware none
+			cull_software none
+		}
+
+	}
+
+}
+
+
+
+material Material#36
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 0 0 1
+			diffuse 1 0 0 1
+			specular 0 0 0 1 10
+		}
+
+	}
+
+}
+
+
+
+material Material#35
+{
+	technique
+	{
+		pass
+		{			
+			ambient 0 0 0 1
+			diffuse 0 0 0 1
+			specular 0 0 0 1 10
+		}
+
+	}
+
+}
+
+
+
+material Material#34
+{
+	technique
+	{
+		pass
+		{			
+			specular 0 0 0 1 10
+		}
+
+	}
+
+}
+
+

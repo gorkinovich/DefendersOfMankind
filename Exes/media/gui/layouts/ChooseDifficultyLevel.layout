@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="ChooseDifficultyLevel">
+    <Property Name="Text" Value="ChooseDifficultyLevel" />
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+
+    <!-- TODO: Completar el fichero... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos decorativos                               -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: Fondo de prueba... -->
+    <Window Type="MankindDefenders/MenuBackground" Name="ChooseDifficultyLevel/Background">
+      <Property Name="Image" Value="set:TestBackground image:TestBackground43" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+    </Window>
+    <!-- FIN: Fondo de prueba... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos interactivos                              -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: XXX de prueba... -->
+    <Window Type="MankindDefenders/Panel" Name="ChooseDifficultyLevel/MainDialog">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.2,0},{0.8,0},{0.8,0}}" />
+
+      <Window Type="MankindDefenders/StaticText" Name="ChooseDifficultyLevel/Title">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.9,0},{0.3,0}}" />
+        <Property Name="Text" Value="Choose the difficulty level:" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="ChooseDifficultyLevel/EasyButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.3,0},{0.40,0},{0.7,0},{0.50,0}}" />
+        <Property Name="Text" Value="Easy" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="ChooseDifficultyLevel/NormalButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.3,0},{0.52,0},{0.7,0},{0.62,0}}" />
+        <Property Name="Text" Value="Normal" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="ChooseDifficultyLevel/HardButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.3,0},{0.64,0},{0.7,0},{0.74,0}}" />
+        <Property Name="Text" Value="Hard" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="ChooseDifficultyLevel/BackButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.3,0},{0.8,0},{0.7,0},{0.9,0}}" />
+        <Property Name="Text" Value="Back" />
+      </Window>
+    </Window>
+    <!-- FIN: XXX de prueba... -->
+  </Window>
+</GUILayout>

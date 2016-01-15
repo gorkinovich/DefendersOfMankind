@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="ShowStatistics">
+    <Property Name="Text" Value="ShowStatistics" />
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+
+    <!-- TODO: Completar el fichero... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos decorativos                               -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: Fondo de prueba... -->
+    <Window Type="MankindDefenders/MenuBackground" Name="ShowStatistics/Background">
+      <Property Name="Image" Value="set:TestBackground image:TestBackground43" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+    </Window>
+    <!-- FIN: Fondo de prueba... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos interactivos                              -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: XXX de prueba... -->
+    <Window Type="MankindDefenders/StaticText" Name="ShowStatistics/Title">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="DejaVuSans-10" />
+      <Property Name="FrameEnabled" Value="True" />
+      <Property Name="BackgroundEnabled" Value="True" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.9,0},{0.2,0}}" />
+      <Property Name="Text" Value="Mission complete" />
+    </Window>
+
+    <Window Type="MankindDefenders/StaticText" Name="ShowStatistics/StatisticsLabels">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="DejaVuSans-10" />
+      <Property Name="FrameEnabled" Value="True" />
+      <Property Name="BackgroundEnabled" Value="True" />
+      <Property Name="HorzFormatting" Value="LeftAligned" />
+      <Property Name="VertFormatting" Value="TopAligned" />
+      <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.25,0},{0.5,0},{0.55,0}}" />
+      <Property Name="Text" Value="Kill points&#10;Damage bonus&#10;Chain bonus&#10;..." />
+    </Window>
+
+    <Window Type="MankindDefenders/StaticText" Name="ShowStatistics/StatisticsValues">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="DejaVuSans-10" />
+      <Property Name="FrameEnabled" Value="True" />
+      <Property Name="BackgroundEnabled" Value="True" />
+      <Property Name="HorzFormatting" Value="RightAligned" />
+      <Property Name="VertFormatting" Value="TopAligned" />
+      <Property Name="UnifiedAreaRect" Value="{{0.6,0},{0.25,0},{0.9,0},{0.55,0}}" />
+      <Property Name="Text" Value="0&#10;0&#10;0&#10;..." />
+    </Window>
+
+    <Window Type="MankindDefenders/StaticText" Name="ShowStatistics/FinalPointsLabel">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="DejaVuSans-10" />
+      <Property Name="FrameEnabled" Value="True" />
+      <Property Name="BackgroundEnabled" Value="True" />
+      <Property Name="HorzFormatting" Value="LeftAligned" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.6,0},{0.5,0},{0.7,0}}" />
+      <Property Name="Text" Value="Final Points" />
+    </Window>
+
+    <Window Type="MankindDefenders/StaticText" Name="ShowStatistics/FinalPointsValue">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="DejaVuSans-10" />
+      <Property Name="FrameEnabled" Value="True" />
+      <Property Name="BackgroundEnabled" Value="True" />
+      <Property Name="HorzFormatting" Value="RightAligned" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.6,0},{0.6,0},{0.9,0},{0.7,0}}" />
+      <Property Name="Text" Value="0" />
+    </Window>
+
+    <Window Type="MankindDefenders/Button" Name="ShowStatistics/ReturnButton">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="DejaVuSans-10" />
+      <Property Name="UnifiedAreaRect" Value="{{0.7,0},{0.8,0},{0.9,0},{0.9,0}}" />
+      <Property Name="Text" Value="Return to map" />
+    </Window>
+    <!-- FIN: XXX de prueba... -->
+  </Window>
+</GUILayout>

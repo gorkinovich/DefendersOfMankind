@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="ConfirmExitProfile">
+    <Property Name="Text" Value="ConfirmExitProfile" />
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+
+    <!-- TODO: Completar el fichero... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos decorativos                               -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: Fondo de prueba... -->
+    <Window Type="MankindDefenders/MenuBackground" Name="ConfirmExitProfile/Background">
+      <Property Name="Image" Value="set:TestBackground image:TestBackground43" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+    </Window>
+    <!-- FIN: Fondo de prueba... -->
+
+    <!-- ******************************************************************************** -->
+    <!--                              Elementos interactivos                              -->
+    <!-- ******************************************************************************** -->
+
+    <!-- TODO: Dialogo de confirmación de prueba... -->
+    <Window Type="MankindDefenders/Panel" Name="ConfirmExitProfile/MainDialog">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.2,0},{0.8,0},{0.8,0}}" />
+
+      <Window Type="MankindDefenders/StaticText" Name="ConfirmExitProfile/Message">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.9,0},{0.4,0}}" />
+        <Property Name="Text" Value="Exit profile?" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="ConfirmExitProfile/YesButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.6,0},{0.4,0},{0.7,0}}" />
+        <Property Name="Text" Value="Yes" />
+      </Window>
+
+      <Window Type="MankindDefenders/Button" Name="ConfirmExitProfile/NoButton">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="DejaVuSans-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0.6,0},{0.6,0},{0.8,0},{0.7,0}}" />
+        <Property Name="Text" Value="No" />
+      </Window>
+    </Window>
+    <!-- FIN: Dialogo de confirmación de prueba... -->
+  </Window>
+</GUILayout>

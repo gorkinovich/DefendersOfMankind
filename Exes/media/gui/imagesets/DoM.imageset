@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Imageset Name="DoM" Imagefile="TitleButtons.png" NativeHorzRes="800" NativeVertRes="600" AutoScaled="true" >
+    <Image Name="NormalButtonUpTL" XPos="1" YPos="0" Width="30" Height="7" />
+    <Image Name="NormalButtonUpTR" XPos="116" YPos="0" Width="10" Height="11" />
+    <Image Name="NormalButtonUpBL" XPos="1" YPos="25" Width="30" Height="7" />
+    <Image Name="NormalButtonUpBR" XPos="116" YPos="27" Width="10" Height="5" />
+    <Image Name="NormalButtonUpT" XPos="31" YPos="0" Width="85" Height="11" />
+    <Image Name="NormalButtonUpL" XPos="1" YPos="7" Width="30" Height="18" />
+    <Image Name="NormalButtonUpR" XPos="116" YPos="11" Width="10" Height="16" />
+    <Image Name="NormalButtonUpB" XPos="31" YPos="21" Width="85" Height="11" />
+    <Image Name="NormalButtonUpM" XPos="31" YPos="11" Width="85" Height="10" />
+
+    <Image Name="NewButtonOverTL" XPos="1" YPos="31" Width="30" Height="7" />
+    <Image Name="NewButtonOverTR" XPos="116" YPos="31" Width="10" Height="11" />
+    <Image Name="NewButtonOverBL" XPos="1" YPos="56" Width="30" Height="7" />
+    <Image Name="NewButtonOverBR" XPos="116" YPos="58" Width="10" Height="5" />
+	
+    <Image Name="NewButtonOverT" XPos="31" YPos="31" Width="85" Height="11" />
+    <Image Name="NewButtonOverL" XPos="1" YPos="38" Width="30" Height="18" />
+    <Image Name="NewButtonOverR" XPos="116" YPos="42" Width="10" Height="16" />
+    <Image Name="NewButtonOverB" XPos="31" YPos="52" Width="85" Height="11" />
+    <Image Name="NewButtonOverM" XPos="31" YPos="42" Width="85" Height="10" />
+	
+    <Image Name="NewButtonDownTL" XPos="127" YPos="31" Width="30" Height="7" />
+    <Image Name="NewButtonDownTR" XPos="242" YPos="31" Width="10" Height="11" />
+    <Image Name="NewButtonDownBL" XPos="127" YPos="56" Width="30" Height="7" />
+    <Image Name="NewButtonDownBR" XPos="242" YPos="58" Width="10" Height="5" />
+	
+    <Image Name="NewButtonDownT" XPos="157" YPos="31" Width="85" Height="11" />
+    <Image Name="NewButtonDownL" XPos="127" YPos="38" Width="30" Height="18" />
+    <Image Name="NewButtonDownR" XPos="242" YPos="42" Width="10" Height="16" />
+    <Image Name="NewButtonDownB" XPos="157" YPos="52" Width="85" Height="11" />
+    <Image Name="NewButtonDownM" XPos="157" YPos="42" Width="85" Height="10" />
+	
+    <Image Name="OptionButtonOverTL" XPos="1" YPos="62" Width="30" Height="7" />
+    <Image Name="OptionButtonOverTR" XPos="116" YPos="62" Width="10" Height="11" />
+    <Image Name="OptionButtonOverBL" XPos="1" YPos="87" Width="30" Height="7" />
+    <Image Name="OptionButtonOverBR" XPos="116" YPos="89" Width="10" Height="5" />
+	
+    <Image Name="OptionButtonOverT" XPos="31" YPos="62" Width="85" Height="11" />
+    <Image Name="OptionButtonOverL" XPos="1" YPos="69" Width="30" Height="18" />
+    <Image Name="OptionButtonOverR" XPos="116" YPos="73" Width="10" Height="16" />
+    <Image Name="OptionButtonOverB" XPos="31" YPos="83" Width="85" Height="11" />
+    <Image Name="OptionButtonOverM" XPos="31" YPos="73" Width="85" Height="10" />
+	
+    <Image Name="OptionButtonDownTL" XPos="127" YPos="62" Width="30" Height="7" />
+    <Image Name="OptionButtonDownTR" XPos="242" YPos="62" Width="10" Height="11" />
+    <Image Name="OptionButtonDownBL" XPos="127" YPos="87" Width="30" Height="7" />
+    <Image Name="OptionButtonDownBR" XPos="242" YPos="89" Width="10" Height="5" />
+	
+    <Image Name="OptionButtonDownT" XPos="157" YPos="62" Width="85" Height="11" />
+    <Image Name="OptionButtonDownL" XPos="127" YPos="69" Width="30" Height="18" />
+    <Image Name="OptionButtonDownR" XPos="242" YPos="73" Width="10" Height="16" />
+    <Image Name="OptionButtonDownB" XPos="157" YPos="83" Width="85" Height="11" />
+    <Image Name="OptionButtonDownM" XPos="157" YPos="73" Width="85" Height="10" />
+	
+    <Image Name="ExitButtonOverTL" XPos="1" YPos="93" Width="30" Height="7" />
+    <Image Name="ExitButtonOverTR" XPos="116" YPos="93" Width="10" Height="11" />
+    <Image Name="ExitButtonOverBL" XPos="1" YPos="118" Width="30" Height="7" />
+    <Image Name="ExitButtonOverBR" XPos="116" YPos="120" Width="10" Height="5" />
+	
+    <Image Name="ExitButtonOverT" XPos="31" YPos="93" Width="85" Height="11" />
+    <Image Name="ExitButtonOverL" XPos="1" YPos="100" Width="30" Height="18" />
+    <Image Name="ExitButtonOverR" XPos="116" YPos="104" Width="10" Height="16" />
+    <Image Name="ExitButtonOverB" XPos="31" YPos="114" Width="85" Height="11" />
+    <Image Name="ExitButtonOverM" XPos="31" YPos="104" Width="85" Height="10" />
+	
+    <Image Name="ExitButtonDownTL" XPos="127" YPos="93" Width="30" Height="7" />
+    <Image Name="ExitButtonDownTR" XPos="242" YPos="93" Width="10" Height="11" />
+    <Image Name="ExitButtonDownBL" XPos="127" YPos="118" Width="30" Height="7" />
+    <Image Name="ExitButtonDownBR" XPos="242" YPos="120" Width="10" Height="5" />
+	
+    <Image Name="ExitButtonDownT" XPos="157" YPos="93" Width="85" Height="11" />
+    <Image Name="ExitButtonDownL" XPos="127" YPos="100" Width="30" Height="18" />
+    <Image Name="ExitButtonDownR" XPos="242" YPos="104" Width="10" Height="16" />
+    <Image Name="ExitButtonDownB" XPos="157" YPos="114" Width="85" Height="11" />
+    <Image Name="ExitButtonDownM" XPos="157" YPos="104" Width="85" Height="10" />
+</Imageset>
