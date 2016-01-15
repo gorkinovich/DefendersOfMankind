@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lua51lib", "lua51lib.vcproj", "{7F102A88-7CFE-4088-9ED1-114E5479EE80}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lua51dll", "lua51dll.vcproj", "{27922870-9286-43E5-8EBA-3724367C20E4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7F102A88-7CFE-4088-9ED1-114E5479EE80} = {7F102A88-7CFE-4088-9ED1-114E5479EE80}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F102A88-7CFE-4088-9ED1-114E5479EE80}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7F102A88-7CFE-4088-9ED1-114E5479EE80}.Debug|Win32.Build.0 = Debug|Win32
+		{7F102A88-7CFE-4088-9ED1-114E5479EE80}.Release|Win32.ActiveCfg = Release|Win32
+		{7F102A88-7CFE-4088-9ED1-114E5479EE80}.Release|Win32.Build.0 = Release|Win32
+		{27922870-9286-43E5-8EBA-3724367C20E4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{27922870-9286-43E5-8EBA-3724367C20E4}.Debug|Win32.Build.0 = Debug|Win32
+		{27922870-9286-43E5-8EBA-3724367C20E4}.Release|Win32.ActiveCfg = Release|Win32
+		{27922870-9286-43E5-8EBA-3724367C20E4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

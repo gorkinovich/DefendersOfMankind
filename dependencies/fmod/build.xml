@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!-- Fichero Ant para la compilacion de Ogre -->
+<!-- Marco Antonio Gomez Martin -->
+<!-- Septiembre 2010 -->
+
+<project name="fmod" default="build">
+
+<!-- =================== -->
+<!-- TARGETS DE LIMPIEZA -->
+<!-- =================== -->
+
+<target name="cleanRelease" description="Elimina ficheros de compilación">
+</target>
+
+<target name="cleanDebug" description="Elimina ficheros de compilación">
+</target>
+
+<target name="clean" description="Elimina ficheros de compilación"
+        depends="cleanDebug,cleanRelease"/>
+
+<!-- ==================================== -->
+<!-- TARGETS DE CREACION DE DOCUMENTACION -->
+<!-- ==================================== -->
+
+<target name="doxygen" description="Genera la documentación, si la hay.">
+  <taskdef name="doxygen" classname="org.doxygen.tools.DoxygenTask" />
+  <doxygen configFilename="Doxyfile"/>
+</target>
+
+<!-- ==================================== -->
+<!-- TARGETS DE PUBLICACION DE RESULTADOS -->
+<!-- AL DIRECTORIO dependencies           -->
+<!-- ==================================== -->
+
+<target name="publishHeaders">
+  <mkdir dir="../include/fmod"/>
+  <copy todir="../include/fmod">
+    <fileset dir="./fmod"/>
+  </copy>
+</target>
+
+<target name="publishDebug" depends="publishHeaders">
+  <copy todir="../lib/Debug">
+    <fileset dir="./lib/Debug" includes="*.lib"/>
+  </copy>
+  <copy todir="../bin/Debug">
+    <fileset dir="./bin/Debug" includes="*.dll"/>
+  </copy>
+</target>
+
+<target name="publishRelease" depends="publishHeaders">
+  <copy todir="../lib/Release">
+    <fileset dir="./lib/Release" includes="*.lib"/>
+  </copy>
+  <copy todir="../bin/Release">
+    <fileset dir="./bin/Release" includes="*.dll"/>
+  </copy>
+</target>
+
+<!-- ================================== -->
+<!-- TARGETS DE COMPILACION INCREMENTAL -->
+<!-- ================================== -->
+
+<!-- Objetivo que compila el proyecto en modo Debug. -->
+<target name="debug" description="Compilación (incremental) en modo Debug">
+  <antcall target="publishDebug"/>
+</target>
+
+<!-- Objetivo que compila el proyecto en modo Release. -->
+<target name="release" description="Compilación (incremental) en modo Release">
+  <antcall target="publishRelease"/>
+</target>
+
+<!-- Objetivo que compila el proyecto (Debug+Release) de forma incremental. -->
+<target name="build" description="Compilación (incremental) Debug y Release."
+        depends="debug, release"/>
+
+<!-- =============================== -->
+<!-- TARGETS DE COMPILACION COMPLETA -->
+<!-- =============================== -->
+
+<!-- Objetivo que compila todo el proyecto en modo Debug. -->
+<target name="redebug" description="Compilación desde cero en modo Debug"
+		depends="publishDebug"/>
+
+<!-- Objetivo que compila todo el proyecto en modo Release. -->
+<target name="rerelease" description="Compilación desde cero en modo Release"
+		depends="publishRelease"/>
+
+<!-- Objetivo que compila todo el proyecto (Debug+Release). -->
+<target name="rebuild" description="Compilación desde cero en Debug y Release."
+        depends="redebug, rerelease"/>
+
+<!-- =========================== -->
+<!-- TARGETS PARA CRUISE CONTROL -->
+<!-- =========================== -->
+
+<target name="CruiseControl" description="Compilacion para CruiseControl."
+        depends="build"/>
+
+</project>

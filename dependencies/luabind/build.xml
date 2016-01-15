@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!-- Fichero Ant para la compilacion de Ogre -->
+<!-- Marco Antonio Gomez Martin -->
+<!-- Septiembre 2010 -->
+
+<project name="luabind" default="build">
+
+<!-- =================== -->
+<!-- TARGETS DE LIMPIEZA -->
+<!-- =================== -->
+
+<target name="cleanRelease" description="Elimina ficheros de compilación">
+  <delete includeemptydirs="true" failonerror="false">
+    <fileset dir="./bin"/>
+  </delete>
+</target>
+
+<target name="cleanDebug" description="Elimina ficheros de compilación">
+  <delete includeemptydirs="true" failonerror="false">
+    <fileset dir="./bin"/>
+  </delete>
+</target>
+
+<target name="clean" description="Elimina ficheros de compilación"
+        depends="cleanDebug,cleanRelease"/>
+
+<!-- ==================================== -->
+<!-- TARGETS DE CREACION DE DOCUMENTACION -->
+<!-- ==================================== -->
+
+<target name="doxygen" description="Genera la documentación, si la hay.">
+  <taskdef name="doxygen" classname="org.doxygen.tools.DoxygenTask" />
+  <doxygen configFilename="Doxyfile"/>
+</target>
+
+<!-- ==================================== -->
+<!-- TARGETS DE PUBLICACION DE RESULTADOS -->
+<!-- AL DIRECTORIO dependencies           -->
+<!-- ==================================== -->
+
+<target name="publishHeaders">
+  <mkdir dir="../include/luabind"/>
+  <copy todir="../include/luabind">
+    <fileset dir="./luabind"/>
+  </copy>
+</target>
+
+<target name="publishDebug" depends="publishHeaders">
+  <copy todir="../lib/Debug">
+    <fileset dir="./bin/msvc-9.0/release/threading-multi" includes="*.lib"/>
+  </copy>
+  <copy todir="../bin/Debug">
+    <fileset dir="./bin/msvc-9.0/release/threading-multi" includes="*.dll"/>
+  </copy>
+</target>
+
+<target name="publishRelease" depends="publishHeaders">
+  <copy todir="../lib/Release">
+    <fileset dir="./bin/msvc-9.0/release/threading-multi" includes="*.lib"/>
+  </copy>
+  <copy todir="../bin/Release">
+    <fileset dir="./bin/msvc-9.0/release/threading-multi" includes="*.dll"/>
+  </copy>
+</target>
+
+<!-- ================================== -->
+<!-- TARGETS DE COMPILACION INCREMENTAL -->
+<!-- ================================== -->
+
+<property name="bjamDefaultParams"
+          value='-sBOOST_BUILD_PATH="./boost-build" -sBOOST_ROOT="../boost-1.46.0" -sLUA_PATH="../lua" --toolset=msvc-9.0 link=shared release'/>
+
+<!-- Objetivo que compila el proyecto en modo Debug. -->
+<target name="debug" description="Compilación (incremental) en modo Debug">
+  <exec executable="./dependencies/luabind/bjam" failonerror="true" dir="${basedir}">
+    <arg line="${bjamDefaultParams}"/>
+  </exec>
+  <antcall target="publishDebug"/>
+</target>
+
+<!-- Objetivo que compila el proyecto en modo Release. -->
+<target name="release" description="Compilación (incremental) en modo Release">
+  <exec executable="./dependencies/luabind/bjam" failonerror="true" dir="${basedir}">
+    <arg line="${bjamDefaultParams}"/>
+  </exec>
+  <antcall target="publishRelease"/>
+</target>
+
+<!-- Objetivo que compila el proyecto (Debug+Release) de forma incremental. -->
+<target name="build" description="Compilación (incremental) Debug y Release."
+        depends="debug, release"/>
+
+<!-- =============================== -->
+<!-- TARGETS DE COMPILACION COMPLETA -->
+<!-- =============================== -->
+
+<!-- Objetivo que compila todo el proyecto en modo Debug. -->
+<target name="redebug" description="Compilación desde cero en modo Debug"
+		depends="publishDebug"/>
+
+<!-- Objetivo que compila todo el proyecto en modo Release. -->
+<target name="rerelease" description="Compilación desde cero en modo Release"
+		depends="publishRelease"/>
+
+<!-- Objetivo que compila todo el proyecto (Debug+Release). -->
+<target name="rebuild" description="Compilación desde cero en Debug y Release."
+        depends="redebug, rerelease"/>
+
+<!-- =========================== -->
+<!-- TARGETS PARA CRUISE CONTROL -->
+<!-- =========================== -->
+
+<target name="CruiseControl" description="Compilacion para CruiseControl."
+        depends="build"/>
+
+</project>
